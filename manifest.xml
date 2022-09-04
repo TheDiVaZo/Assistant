@@ -1,0 +1,1959 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>cd16c746-363d-4805-b1cb-a5f08776e640</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Contoso</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="assistant"/>
+  <Description DefaultValue="A template to get started."/>
+  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
+  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <AppDomains>
+    <AppDomain>https://www.contoso.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://localhost:3000/taskpane.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Document">
+        <DesktopFormFactor>
+          <FunctionFile resid="Commands.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="assistants">
+              <Group id="Profiles">
+                <Label resid="Profiles.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="FileSaveAsWordDotx"/>
+                  <bt:Image size="32" resid="FileSaveAsWordDotx"/>
+                  <bt:Image size="80" resid="FileSaveAsWordDotx"/>
+                </Icon>
+                <Control xsi:type="Button" id="ProfilesControl">
+                  <Label resid="ProfilesControl.Label"/>
+                  <Supertip>
+                    <Title resid="ProfilesControl.Label"/>
+                    <Description resid="ProfilesControl.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="FileSaveAsWordDotx"/>
+                    <bt:Image size="32" resid="FileSaveAsWordDotx"/>
+                    <bt:Image size="80" resid="FileSaveAsWordDotx"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="ProfilesControl.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="NewProfile">
+                  <Label resid="NewProfile.LabelShort"/>
+                  <Supertip>
+                    <Title resid="NewProfile.Label"/>
+                    <Description resid="NewProfile.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="QueryShowTable"/>
+                    <bt:Image size="32" resid="QueryShowTable"/>
+                    <bt:Image size="80" resid="QueryShowTable"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="NewProfile.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="SaveProfile">
+                  <Label resid="SaveProfile.LabelShort"/>
+                  <Supertip>
+                    <Title resid="SaveProfile.Label"/>
+                    <Description resid="SaveProfile.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="FileSaveAs"/>
+                    <bt:Image size="32" resid="FileSaveAs"/>
+                    <bt:Image size="80" resid="FileSaveAs"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="SaveProfile.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="AboutProg">
+                  <Label resid="AboutProg.LabelShort"/>
+                  <Supertip>
+                    <Title resid="AboutProg.Label"/>
+                    <Description resid="AboutProg.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Help"/>
+                    <bt:Image size="32" resid="Help"/>
+                    <bt:Image size="80" resid="Help"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="AboutProg.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="Ass_Insert">
+                <Label resid="Ass_Insert.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="QuickStylesSets"/>
+                  <bt:Image size="32" resid="QuickStylesSets"/>
+                  <bt:Image size="80" resid="QuickStylesSets"/>
+                </Icon>
+                <Control xsi:type="Button" id="VstavkaBezFormata">
+                  <Label resid="VstavkaBezFormata.LabelShort"/>
+                  <Supertip>
+                    <Title resid="VstavkaBezFormata.Label"/>
+                    <Description resid="VstavkaBezFormata.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="QuickStylesSets"/>
+                    <bt:Image size="32" resid="QuickStylesSets"/>
+                    <bt:Image size="80" resid="QuickStylesSets"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstavkaBezFormata.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstShab">
+                  <Label resid="VstShab.LabelShort"/>
+                  <Supertip>
+                    <Title resid="VstShab.Label"/>
+                    <Description resid="VstShab.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="FunctionsTextInsertGallery"/>
+                    <bt:Image size="32" resid="FunctionsTextInsertGallery"/>
+                    <bt:Image size="80" resid="FunctionsTextInsertGallery"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstShab.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstGor">
+                  <Label resid="VstGor.LabelShort"/>
+                  <Supertip>
+                    <Title resid="VstGor.Label"/>
+                    <Description resid="VstGor.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="PageOrientationLandscape"/>
+                    <bt:Image size="32" resid="PageOrientationLandscape"/>
+                    <bt:Image size="80" resid="PageOrientationLandscape"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstGor.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Menu" id="Proch">
+                  <OverriddenByRibbonApi>true</OverriddenByRibbonApi>
+                  <Label resid="Proch.LabelShort" />
+                  <Supertip>
+                    <Title resid="Proch.Label" />
+                    <Description resid="Proch.Tooltip" />
+                  </Supertip>
+                  <Items>
+                    <Item id="VstVert">
+                      <Label resid="VstVert.LabelShort"/>
+                      <Supertip>
+                        <Title resid="VstVert.Label" />
+                        <Description resid="VstVert.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="PageOrientationPortrait" />
+                        <bt:Image size="32" resid="PageOrientationPortrait" />
+                        <bt:Image size="80" resid="PageOrientationPortrait" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="VstVert.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="VstMeta">
+                      <Label resid="VstMeta.LabelShort"/>
+                      <Supertip>
+                        <Title resid="VstMeta.Label" />
+                        <Description resid="VstMeta.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="PasteSpecialDialog" />
+                        <bt:Image size="32" resid="PasteSpecialDialog" />
+                        <bt:Image size="80" resid="PasteSpecialDialog" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="VstMeta.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="VstDoc">
+                      <Label resid="VstDoc.LabelShort"/>
+                      <Supertip>
+                        <Title resid="VstDoc.Label" />
+                        <Description resid="VstDoc.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Paste" />
+                        <bt:Image size="32" resid="Paste" />
+                        <bt:Image size="80" resid="Paste" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="VstDoc.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="PometkaEdit">
+                      <Label resid="PometkaEdit.LabelShort"/>
+                      <Supertip>
+                        <Title resid="PometkaEdit.Label" />
+                        <Description resid="PometkaEdit.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="EditIcon" />
+                        <bt:Image size="32" resid="EditIcon" />
+                        <bt:Image size="80" resid="EditIcon" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="PometkaEdit.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="VstPoleSpisok">
+                      <Label resid="VstPoleSpisok.LabelShort"/>
+                      <Supertip>
+                        <Title resid="VstPoleSpisok.Label" />
+                        <Description resid="VstPoleSpisok.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="ComboBox" />
+                        <bt:Image size="32" resid="ComboBox" />
+                        <bt:Image size="80" resid="ComboBox" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="VstPoleSpisok.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="VstPoleFormText">
+                      <Label resid="VstPoleFormText.LabelShort"/>
+                      <Supertip>
+                        <Title resid="VstPoleFormText.Label" />
+                        <Description resid="VstPoleFormText.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="DatasheetColumnRename" />
+                        <bt:Image size="32" resid="DatasheetColumnRename" />
+                        <bt:Image size="80" resid="DatasheetColumnRename" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="VstPoleFormText.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="PropPole">
+                      <Label resid="PropPole.LabelShort"/>
+                      <Supertip>
+                        <Title resid="PropPole.Label" />
+                        <Description resid="PropPole.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="PropertiesForm" />
+                        <bt:Image size="32" resid="PropertiesForm" />
+                        <bt:Image size="80" resid="PropertiesForm" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="PropPole.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="VstSvaz">
+                      <Label resid="VstSvaz.LabelShort"/>
+                      <Supertip>
+                        <Title resid="VstSvaz.Label" />
+                        <Description resid="VstSvaz.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="SourceControlShareObjects" />
+                        <bt:Image size="32" resid="SourceControlShareObjects" />
+                        <bt:Image size="80" resid="SourceControlShareObjects" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="VstSvaz.Url" />
+                      </Action>
+                    </Item>
+                  </Items>
+                  <Icon>
+                    <bt:Image size="16" resid="Empty" />
+                    <bt:Image size="32" resid="Empty" />
+                    <bt:Image size="80" resid="Empty" />
+                  </Icon>
+                </Control>                              
+              </Group>
+              <Group id="Ass_Upd">
+                <Label resid="Ass_Upd.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Refresh"/>
+                  <bt:Image size="32" resid="Refresh"/>
+                  <bt:Image size="80" resid="Refresh"/>
+                </Icon>
+                <Control xsi:type="Button" id="ObnPol">
+                  <Label resid="ObnPol.LabelShort"/>
+                  <Supertip>
+                    <Title resid="ObnPol.Label"/>
+                    <Description resid="ObnPol.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Refresh"/>
+                    <bt:Image size="32" resid="Refresh"/>
+                    <bt:Image size="80" resid="Refresh"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="ObnPol.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="ObnForm">
+                  <Label resid="ObnForm.LabelShort"/>
+                  <Supertip>
+                    <Title resid="ObnForm.Label"/>
+                    <Description resid="ObnForm.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="TableSharePointLMW"/>
+                    <bt:Image size="32" resid="TableSharePointLMW"/>
+                    <bt:Image size="80" resid="TableSharePointLMW"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="ObnForm.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="UdalVnSv">
+                  <Label resid="UdalVnSv.LabelShort"/>
+                  <Supertip>
+                    <Title resid="UdalVnSv.Label"/>
+                    <Description resid="UdalVnSv.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="QueryDelete"/>
+                    <bt:Image size="32" resid="QueryDelete"/>
+                    <bt:Image size="80" resid="QueryDelete"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="UdalVnSv.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="RazorSv">
+                  <Label resid="RazorSv.LabelShort"/>
+                  <Supertip>
+                    <Title resid="RazorSv.Label"/>
+                    <Description resid="RazorSv.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="TableUnlinkExternalData"/>
+                    <bt:Image size="32" resid="TableUnlinkExternalData"/>
+                    <bt:Image size="80" resid="TableUnlinkExternalData"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="RazorSv.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="Ass_Style">
+                <Label resid="Ass_Style.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="FormControlLabel"/>
+                  <bt:Image size="32" resid="FormControlLabel"/>
+                  <bt:Image size="80" resid="FormControlLabel"/>
+                </Icon>
+                <Control xsi:type="Menu" id="StlTextSet">
+                  <OverriddenByRibbonApi>true</OverriddenByRibbonApi>
+                  <Label resid="StlTextSet.LabelShort" />
+                  <Supertip>
+                    <Title resid="StlTextSet.Label" />
+                    <Description resid="StlTextSet.Tooltip" />
+                  </Supertip>
+                  <Items>
+                    <Item id="StlTextCenter">
+                      <Label resid="StlTextCenter.LabelShort"/>
+                      <Supertip>
+                        <Title resid="StlTextCenter.Label" />
+                        <Description resid="StlTextCenter.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="AlignCenter" />
+                        <bt:Image size="32" resid="AlignCenter" />
+                        <bt:Image size="80" resid="AlignCenter" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="StlTextCenter.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="StlTextRazr">
+                      <Label resid="StlTextRazr.LabelShort"/>
+                      <Supertip>
+                        <Title resid="StlTextRazr.Label" />
+                        <Description resid="StlTextRazr.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="AsianLayoutMenu" />
+                        <bt:Image size="32" resid="AsianLayoutMenu" />
+                        <bt:Image size="80" resid="AsianLayoutMenu" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="StlTextRazr.Url" />
+                      </Action>
+                    </Item>
+                 </Items>
+                  <Icon>
+                    <bt:Image size="16" resid="A" />
+                    <bt:Image size="32" resid="A" />
+                    <bt:Image size="80" resid="A" />
+                  </Icon>
+                </Control>                              
+                <Control xsi:type="Button" id="StlRisSet">
+                  <Label resid="StlRisSet.LabelShort"/>
+                  <Supertip>
+                    <Title resid="StlRisSet.Label"/>
+                    <Description resid="StlRisSet.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="ContentControlPicture"/>
+                    <bt:Image size="32" resid="ContentControlPicture"/>
+                    <bt:Image size="80" resid="ContentControlPicture"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="StlRisSet.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Menu" id="StlFormulaSet">
+                  <Label resid="StlFormulaSet.LabelShort"/>
+                  <Supertip>
+                    <Title resid="StlFormulaSet.Label"/>
+                    <Description resid="StlFormulaSet.Tooltip"/>
+                  </Supertip>
+                  <Items>
+                    <Item id="StlFormulaDescr">
+                      <Label resid="StlFormulaDescr.LabelShort"/>
+                      <Supertip>
+                        <Title resid="StlFormulaDescr.Label" />
+                        <Description resid="StlFormulaDescr.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="FormControlLabel" />
+                        <bt:Image size="32" resid="FormControlLabel" />
+                        <bt:Image size="80" resid="FormControlLabel" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="StlFormulaDescr.Url" />
+                      </Action>
+                    </Item>
+                 </Items>
+                  <Icon>
+                    <bt:Image size="16" resid="AutoSum"/>
+                    <bt:Image size="32" resid="AutoSum"/>
+                    <bt:Image size="80" resid="AutoSum"/>
+                  </Icon>
+                </Control>
+                <Control xsi:type="Menu" id="StlHeaderSet">
+                  <Label resid="StlHeaderSet.LabelShort"/>
+                  <Supertip>
+                    <Title resid="StlHeaderSet.Label"/>
+                    <Description resid="StlHeaderSet.Tooltip"/>
+                  </Supertip>
+                  <Items>
+                    <Item id="StlHeader1">
+                      <Label resid="StlHeader1.LabelShort"/>
+                      <Supertip>
+                        <Title resid="StlHeader1.Label" />
+                        <Description resid="StlHeader1.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="_1" />
+                        <bt:Image size="32" resid="_1" />
+                        <bt:Image size="80" resid="_1" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="StlHeader1.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="StlHeader2">
+                      <Label resid="StlHeader2.LabelShort"/>
+                      <Supertip>
+                        <Title resid="StlHeader2.Label" />
+                        <Description resid="StlHeader2.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="_2" />
+                        <bt:Image size="32" resid="_2" />
+                        <bt:Image size="80" resid="_2" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="StlHeader2.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="StlHeader3">
+                      <Label resid="StlHeader3.LabelShort"/>
+                      <Supertip>
+                        <Title resid="StlHeader3.Label" />
+                        <Description resid="StlHeader3.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="_3" />
+                        <bt:Image size="32" resid="_3" />
+                        <bt:Image size="80" resid="_3" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="StlHeader3.Url" />
+                      </Action>
+                    </Item>
+                 </Items>
+                  <Icon>
+                    <bt:Image size="16" resid="TextReflectionGallery"/>
+                    <bt:Image size="32" resid="TextReflectionGallery"/>
+                    <bt:Image size="80" resid="TextReflectionGallery"/>
+                  </Icon>
+                </Control>
+                <Control xsi:type="Button" id="StlNumProstSet">
+                  <Label resid="StlNumProstSet.LabelShort"/>
+                  <Supertip>
+                    <Title resid="StlNumProstSet.Label"/>
+                    <Description resid="StlNumProstSet.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="ControlSpecialEffectChiseled"/>
+                    <bt:Image size="32" resid="ControlSpecialEffectChiseled"/>
+                    <bt:Image size="80" resid="ControlSpecialEffectChiseled"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="StlNumProstSet.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Menu" id="StlNumSet">
+                  <Label resid="StlNumSet.LabelShort"/>
+                  <Supertip>
+                    <Title resid="StlNumSet.Label"/>
+                    <Description resid="StlNumSet.Tooltip"/>
+                  </Supertip>
+                  <Items>
+                    <Item id="StlNumPlus">
+                      <Label resid="StlNumPlus.LabelShort"/>
+                      <Supertip>
+                        <Title resid="StlNumPlus.Label" />
+                        <Description resid="StlNumPlus.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="OutlinePromote" />
+                        <bt:Image size="32" resid="OutlinePromote" />
+                        <bt:Image size="80" resid="OutlinePromote" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="StlNumPlus.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="StlNumMinus">
+                      <Label resid="StlNumMinus.LabelShort"/>
+                      <Supertip>
+                        <Title resid="StlNumMinus.Label" />
+                        <Description resid="StlNumMinus.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="OutlineGroup" />
+                        <bt:Image size="32" resid="OutlineGroup" />
+                        <bt:Image size="80" resid="OutlineGroup" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="StlNumMinus.Url" />
+                      </Action>
+                    </Item>
+                 </Items>
+                  <Icon>
+                    <bt:Image size="16" resid="FormControlEditBox"/>
+                    <bt:Image size="32" resid="FormControlEditBox"/>
+                    <bt:Image size="80" resid="FormControlEditBox"/>
+                  </Icon>
+                </Control>              
+              </Group>
+              <Group id="Ass_Numb">
+                <Label resid="Ass_Numb.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="TripaneViewMode"/>
+                  <bt:Image size="32" resid="TripaneViewMode"/>
+                  <bt:Image size="80" resid="TripaneViewMode"/>
+                </Icon>
+                <Control xsi:type="Button" id="VstAvtoSs">
+                  <Label resid="VstAvtoSs.Label"/>
+                  <Supertip>
+                    <Title resid="VstAvtoSs.Label"/>
+                    <Description resid="VstAvtoSs.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="FileLinksToFiles"/>
+                    <bt:Image size="32" resid="FileLinksToFiles"/>
+                    <bt:Image size="80" resid="FileLinksToFiles"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstAvtoSs.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstSs">
+                  <Label resid="VstSs.Label"/>
+                  <Supertip>
+                    <Title resid="VstSs.Label"/>
+                    <Description resid="VstSs.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="ReplaceWithAutoText"/>
+                    <bt:Image size="32" resid="ReplaceWithAutoText"/>
+                    <bt:Image size="80" resid="ReplaceWithAutoText"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstSs.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="IsprSs">
+                  <Label resid="IsprSs.Label"/>
+                  <Supertip>
+                    <Title resid="IsprSs.Label"/>
+                    <Description resid="IsprSs.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="AutoLinkingStop"/>
+                    <bt:Image size="32" resid="AutoLinkingStop"/>
+                    <bt:Image size="80" resid="AutoLinkingStop"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="IsprSs.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="ParamNum">
+                  <Label resid="ParamNum.Label"/>
+                  <Supertip>
+                    <Title resid="ParamNum.Label"/>
+                    <Description resid="ParamNum.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="ListSetNumberingValue"/>
+                    <bt:Image size="32" resid="ListSetNumberingValue"/>
+                    <bt:Image size="80" resid="ListSetNumberingValue"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="ParamNum.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstNris">
+                  <Label resid="VstNris.Label"/>
+                  <Supertip>
+                    <Title resid="VstNris.Label"/>
+                    <Description resid="VstNris.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="PictureInsertFromFilePowerPoint"/>
+                    <bt:Image size="32" resid="PictureInsertFromFilePowerPoint"/>
+                    <bt:Image size="80" resid="PictureInsertFromFilePowerPoint"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstNris.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstTab">
+                  <Label resid="VstTab.Label"/>
+                  <Supertip>
+                    <Title resid="VstTab.Label"/>
+                    <Description resid="VstTab.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="TableInsert"/>
+                    <bt:Image size="32" resid="TableInsert"/>
+                    <bt:Image size="80" resid="TableInsert"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstTab.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstForm">
+                  <Label resid="VstForm.Label"/>
+                  <Supertip>
+                    <Title resid="VstForm.Label"/>
+                    <Description resid="VstForm.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="EquationEdit"/>
+                    <bt:Image size="32" resid="EquationEdit"/>
+                    <bt:Image size="80" resid="EquationEdit"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstForm.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstLit">
+                  <Label resid="VstLit.Label"/>
+                  <Supertip>
+                    <Title resid="VstLit.Label"/>
+                    <Description resid="VstLit.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="CustomBibliographyGallery"/>
+                    <bt:Image size="32" resid="CustomBibliographyGallery"/>
+                    <bt:Image size="80" resid="CustomBibliographyGallery"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstLit.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstPril">
+                  <Label resid="VstPril.Label"/>
+                  <Supertip>
+                    <Title resid="VstPril.Label"/>
+                    <Description resid="VstPril.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="CustomGallery1"/>
+                    <bt:Image size="32" resid="CustomGallery1"/>
+                    <bt:Image size="80" resid="CustomGallery1"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstPril.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstPunkt">
+                  <Label resid="VstPunkt.Label"/>
+                  <Supertip>
+                    <Title resid="VstPunkt.Label"/>
+                    <Description resid="VstPunkt.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="WordCountList"/>
+                    <bt:Image size="32" resid="WordCountList"/>
+                    <bt:Image size="80" resid="WordCountList"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstPunkt.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="UtilsInsertPageN">
+                  <Label resid="UtilsInsertPageN.Label"/>
+                  <Supertip>
+                    <Title resid="UtilsInsertPageN.Label"/>
+                    <Description resid="UtilsInsertPageN.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="FormattingUnique"/>
+                    <bt:Image size="32" resid="FormattingUnique"/>
+                    <bt:Image size="80" resid="FormattingUnique"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="UtilsInsertPageN.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="Mast_Shab">
+                <Label resid="Mast_Shab.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="CreateReportFromWizard"/>
+                  <bt:Image size="32" resid="CreateReportFromWizard"/>
+                  <bt:Image size="80" resid="CreateReportFromWizard"/>
+                </Icon>
+                <Control xsi:type="Button" id="OpenSpisok">
+                  <Label resid="OpenSpisok.LabelShort"/>
+                  <Supertip>
+                    <Title resid="OpenSpisok.Label"/>
+                    <Description resid="OpenSpisok.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="AccessTableContacts"/>
+                    <bt:Image size="32" resid="AccessTableContacts"/>
+                    <bt:Image size="80" resid="AccessTableContacts"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="OpenSpisok.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Params">
+                  <Label resid="Params.LabelShort"/>
+                  <Supertip>
+                    <Title resid="Params.Label"/>
+                    <Description resid="Params.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="DefinePrintStyles"/>
+                    <bt:Image size="32" resid="DefinePrintStyles"/>
+                    <bt:Image size="80" resid="DefinePrintStyles"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="Params.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Zapusk">
+                  <Label resid="Zapusk.LabelShort"/>
+                  <Supertip>
+                    <Title resid="Zapusk.Label"/>
+                    <Description resid="Zapusk.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="AnimationPreview"/>
+                    <bt:Image size="32" resid="AnimationPreview"/>
+                    <bt:Image size="80" resid="AnimationPreview"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="Zapusk.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="MshOtkrPapku">
+                  <Label resid="MshOtkrPapku.LabelShort"/>
+                  <Supertip>
+                    <Title resid="MshOtkrPapku.Label"/>
+                    <Description resid="MshOtkrPapku.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="FileOpen"/>
+                    <bt:Image size="32" resid="FileOpen"/>
+                    <bt:Image size="80" resid="FileOpen"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="MshOtkrPapku.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="OpenReserve">
+                  <Label resid="OpenReserve.LabelShort"/>
+                  <Supertip>
+                    <Title resid="OpenReserve.Label"/>
+                    <Description resid="OpenReserve.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="BibliographyAddNewSource"/>
+                    <bt:Image size="32" resid="BibliographyAddNewSource"/>
+                    <bt:Image size="80" resid="BibliographyAddNewSource"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="OpenReserve.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="MShLeft">
+                  <Label resid="MShLeft.LabelShort"/>
+                  <Supertip>
+                    <Title resid="MShLeft.Label"/>
+                    <Description resid="MShLeft.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="OutlinePromote"/>
+                    <bt:Image size="32" resid="OutlinePromote"/>
+                    <bt:Image size="80" resid="OutlinePromote"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="MShLeft.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="MShRight">
+                  <Label resid="MShRight.LabelShort"/>
+                  <Supertip>
+                    <Title resid="MShRight.Label"/>
+                    <Description resid="MShRight.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="OutlineDemote"/>
+                    <bt:Image size="32" resid="OutlineDemote"/>
+                    <bt:Image size="80" resid="OutlineDemote"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="MShRight.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="MshRedPol">
+                  <Label resid="MshRedPol.LabelShort"/>
+                  <Supertip>
+                    <Title resid="MshRedPol.Label"/>
+                    <Description resid="MshRedPol.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="BlogPublishDraft"/>
+                    <bt:Image size="32" resid="BlogPublishDraft"/>
+                    <bt:Image size="80" resid="BlogPublishDraft"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="MshRedPol.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+
+              <Group id="Ass_Serv">
+                <Label resid="Ass_Serv.LabelShort"/>
+                <Icon>
+                  <bt:Image size="16" resid="GroupTools"/>
+                  <bt:Image size="32" resid="GroupTools"/>
+                  <bt:Image size="80" resid="GroupTools"/>
+                </Icon>
+                <Control xsi:type="Button" id="Opt">
+                  <Label resid="Opt.LabelShort"/>
+                  <Supertip>
+                    <Title resid="Opt.Label"/>
+                    <Description resid="Opt.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="GroupTools"/>
+                    <bt:Image size="32" resid="GroupTools"/>
+                    <bt:Image size="80" resid="GroupTools"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="Opt.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="Integr">
+                  <Label resid="Integr.LabelShort"/>
+                  <Supertip>
+                    <Title resid="Integr.Label"/>
+                    <Description resid="Integr.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="ImportTextFile"/>
+                    <bt:Image size="32" resid="ImportTextFile"/>
+                    <bt:Image size="80" resid="ImportTextFile"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="Integr.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="UtilsIsertFromScaner">
+                  <Label resid="UtilsIsertFromScaner.LabelShort"/>
+                  <Supertip>
+                    <Title resid="UtilsIsertFromScaner.Label"/>
+                    <Description resid="UtilsIsertFromScaner.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="ImagerScan"/>
+                    <bt:Image size="32" resid="ImagerScan"/>
+                    <bt:Image size="80" resid="ImagerScan"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="UtilsIsertFromScaner.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="VstKomm">
+                  <Label resid="VstKomm.LabelShort"/>
+                  <Supertip>
+                    <Title resid="VstKomm.Label"/>
+                    <Description resid="VstKomm.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="ReviewNewComment"/>
+                    <bt:Image size="32" resid="ReviewNewComment"/>
+                    <bt:Image size="80" resid="ReviewNewComment"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="VstKomm.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="ZatPol">
+                  <Label resid="ZatPol.LabelShort"/>
+                  <Supertip>
+                    <Title resid="ZatPol.Label"/>
+                    <Description resid="ZatPol.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="FieldShading"/>
+                    <bt:Image size="32" resid="FieldShading"/>
+                    <bt:Image size="80" resid="FieldShading"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="ZatPol.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+
+              <Group id="UtilsGroup">
+                <Label resid="UtilsGroup.LabelShort"/>
+                <Icon>
+                  <bt:Image size="16" resid="GroupTools"/>
+                  <bt:Image size="32" resid="GroupTools"/>
+                  <bt:Image size="80" resid="GroupTools"/>
+                </Icon>
+                <Control xsi:type="Menu" id="Utils"> 
+                  <Label resid="Utils.LabelShort"/>
+                  <Supertip>
+                    <Title resid="Utils.Label"/>
+                    <Description resid="Utils.Tooltip"/>
+                  </Supertip>
+                  <Items>
+                    <Item id="UtilsRedForm">
+                      <Label resid="UtilsRedForm.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsRedForm.Label" />
+                        <Description resid="UtilsRedForm.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="FunctionWizard" />
+                        <bt:Image size="32" resid="FunctionWizard" />
+                        <bt:Image size="80" resid="FunctionWizard" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsRedForm.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsPropis">
+                      <Label resid="UtilsPropis.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsPropis.Label" />
+                        <Description resid="UtilsPropis.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="MagicEightBall" />
+                        <bt:Image size="32" resid="MagicEightBall" />
+                        <bt:Image size="80" resid="MagicEightBall" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsPropis.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsCalc">
+                      <Label resid="UtilsCalc.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsCalc.Label" />
+                        <Description resid="UtilsCalc.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Calculator" />
+                        <bt:Image size="32" resid="Calculator" />
+                        <bt:Image size="80" resid="Calculator" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsCalc.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsColorText">
+                      <Label resid="UtilsColorText.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsColorText.Label" />
+                        <Description resid="UtilsColorText.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="AppointmentColor1" />
+                        <bt:Image size="32" resid="AppointmentColor1" />
+                        <bt:Image size="80" resid="AppointmentColor1" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsColorText.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsColorBack">
+                      <Label resid="UtilsColorBack.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsColorBack.Label" />
+                        <Description resid="UtilsColorBack.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="AppointmentColor10" />
+                        <bt:Image size="32" resid="AppointmentColor10" />
+                        <bt:Image size="80" resid="AppointmentColor10" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsColorBack.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsStrikeText">
+                      <Label resid="UtilsStrikeText.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsStrikeText.Label" />
+                        <Description resid="UtilsStrikeText.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Strikethrough" />
+                        <bt:Image size="32" resid="Strikethrough" />
+                        <bt:Image size="80" resid="Strikethrough" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsStrikeText.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="VstData">
+                      <Label resid="VstData.LabelShort"/>
+                      <Supertip>
+                        <Title resid="VstData.Label" />
+                        <Description resid="VstData.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="SlideShowRehearseTimings" />
+                        <bt:Image size="32" resid="SlideShowRehearseTimings" />
+                        <bt:Image size="80" resid="SlideShowRehearseTimings" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="VstData.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsPrint">
+                      <Label resid="UtilsPrint.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsPrint.Label" />
+                        <Description resid="UtilsPrint.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="AddressBook" />
+                        <bt:Image size="32" resid="AddressBook" />
+                        <bt:Image size="80" resid="AddressBook" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsPrint.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="ExportPDF">
+                      <Label resid="ExportPDF.LabelShort"/>
+                      <Supertip>
+                        <Title resid="ExportPDF.Label" />
+                        <Description resid="ExportPDF.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Export" />
+                        <bt:Image size="32" resid="Export" />
+                        <bt:Image size="80" resid="Export" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="ExportPDF.Url" />
+                      </Action>
+                    </Item>
+                 </Items>
+                  <Icon>
+                    <bt:Image size="16" resid="GroupTools"/>
+                    <bt:Image size="32" resid="GroupTools"/>
+                    <bt:Image size="80" resid="GroupTools"/>
+                  </Icon>
+                </Control>              
+                <Control xsi:type="Menu" id="UtilsTabl">
+                  <Label resid="UtilsTabl.LabelShort"/>
+                  <Supertip>
+                    <Title resid="UtilsTabl.Label"/>
+                    <Description resid="UtilsTabl.Tooltip"/>
+                  </Supertip>
+                  <Items>
+                    <Item id="UtilsTablPovtNum">
+                      <Label resid="UtilsTablPovtNum.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsTablPovtNum.Label" />
+                        <Description resid="UtilsTablPovtNum.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Empty" />
+                        <bt:Image size="32" resid="Empty" />
+                        <bt:Image size="80" resid="Empty" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsTablPovtNum.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsTablDobProd">
+                      <Label resid="UtilsTablDobProd.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsTablDobProd.Label" />
+                        <Description resid="UtilsTablDobProd.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Empty" />
+                        <bt:Image size="32" resid="Empty" />
+                        <bt:Image size="80" resid="Empty" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsTablDobProd.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsTablDobOkon">
+                      <Label resid="UtilsTablDobOkon.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsTablDobOkon.Label" />
+                        <Description resid="UtilsTablDobOkon.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Empty" />
+                        <bt:Image size="32" resid="Empty" />
+                        <bt:Image size="80" resid="Empty" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsTablDobOkon.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsTablPeremesh">
+                      <Label resid="UtilsTablPeremesh.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsTablPeremesh.Label" />
+                        <Description resid="UtilsTablPeremesh.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Empty" />
+                        <bt:Image size="32" resid="Empty" />
+                        <bt:Image size="80" resid="Empty" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsTablPeremesh.Url" />
+                      </Action>
+                    </Item>
+                  </Items>
+                  <Icon>
+                    <bt:Image size="16" resid="TableInsert"/>
+                    <bt:Image size="32" resid="TableInsert"/>
+                    <bt:Image size="80" resid="TableInsert"/>
+                  </Icon>
+                </Control>
+                <Control xsi:type="Menu" id="UtilsOgl">
+                  <Label resid="UtilsOgl.LabelShort"/>
+                  <Supertip>
+                    <Title resid="UtilsOgl.Label"/>
+                    <Description resid="UtilsOgl.Tooltip"/>
+                  </Supertip>
+                  <Items>
+                    <Item id="UtilsOglVst">
+                      <Label resid="UtilsOglVst.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsOglVst.Label" />
+                        <Description resid="UtilsOglVst.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Empty" />
+                        <bt:Image size="32" resid="Empty" />
+                        <bt:Image size="80" resid="Empty" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsOglVst.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsOglObnStr">
+                      <Label resid="UtilsOglObnStr.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsOglObnStr.Label" />
+                        <Description resid="UtilsOglObnStr.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Empty" />
+                        <bt:Image size="32" resid="Empty" />
+                        <bt:Image size="80" resid="Empty" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsOglObnStr.Url" />
+                      </Action>
+                    </Item>
+                 </Items>
+                 <Icon>
+                  <bt:Image size="16" resid="ListSetNumberingValue"/>
+                  <bt:Image size="32" resid="ListSetNumberingValue"/>
+                  <bt:Image size="80" resid="ListSetNumberingValue"/>
+                </Icon>
+                </Control>
+                <Control xsi:type="Menu" id="UtilsLit">
+                  <Label resid="UtilsLit.LabelShort"/>
+                  <Supertip>
+                    <Title resid="UtilsLit.Label"/>
+                    <Description resid="UtilsLit.Tooltip"/>
+                  </Supertip>
+                  <Items>
+                    <Item id="UtilsLitSortAbc">
+                      <Label resid="UtilsLitSortAbc.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsLitSortAbc.Label" />
+                        <Description resid="UtilsLitSortAbc.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Empty" />
+                        <bt:Image size="32" resid="Empty" />
+                        <bt:Image size="80" resid="Empty" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsLitSortAbc.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsLitSortUpom">
+                      <Label resid="UtilsLitSortUpom.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsLitSortUpom.Label" />
+                        <Description resid="UtilsLitSortUpom.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Empty" />
+                        <bt:Image size="32" resid="Empty" />
+                        <bt:Image size="80" resid="Empty" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsLitSortUpom.Url" />
+                      </Action>
+                    </Item>
+                 </Items>
+                 <Icon>
+                  <bt:Image size="16" resid="ListSetNumberingValue"/>
+                  <bt:Image size="32" resid="ListSetNumberingValue"/>
+                  <bt:Image size="80" resid="ListSetNumberingValue"/>
+                </Icon>
+                </Control>
+                <Control xsi:type="Menu" id="UtilsTest">
+                  <Label resid="UtilsTest.LabelShort"/>
+                  <Supertip>
+                    <Title resid="UtilsTest.Label"/>
+                    <Description resid="UtilsTest.Tooltip"/>
+                  </Supertip>
+                  <Items>
+                    <Item id="UtilsTestGIFT">
+                      <Label resid="UtilsTestGIFT.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsTestGIFT.Label" />
+                        <Description resid="UtilsTestGIFT.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="DataValidation" />
+                        <bt:Image size="32" resid="DataValidation" />
+                        <bt:Image size="80" resid="DataValidation" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsTestGIFT.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsTestIspring">
+                      <Label resid="UtilsTestIspring.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsTestIspring.Label" />
+                        <Description resid="UtilsTestIspring.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="DataValidation" />
+                        <bt:Image size="32" resid="DataValidation" />
+                        <bt:Image size="80" resid="DataValidation" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsTestIspring.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsTestGIFT_import">
+                      <Label resid="UtilsTestGIFT_import.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsTestGIFT_import.Label" />
+                        <Description resid="UtilsTestGIFT_import.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="ImportTextFile" />
+                        <bt:Image size="32" resid="ImportTextFile" />
+                        <bt:Image size="80" resid="ImportTextFile" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsTestGIFT_import.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsTestIspring_import">
+                      <Label resid="UtilsTestIspring_imp.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsTestIspring_import.Label" />
+                        <Description resid="UtilsTestIspring_import.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="ImportTextFile" />
+                        <bt:Image size="32" resid="ImportTextFile" />
+                        <bt:Image size="80" resid="ImportTextFile" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsTestIspring_import.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsConvTest">
+                      <Label resid="UtilsConvTest.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsConvTest.Label" />
+                        <Description resid="UtilsConvTest.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="BlogPublishDraft" />
+                        <bt:Image size="32" resid="BlogPublishDraft" />
+                        <bt:Image size="80" resid="BlogPublishDraft" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsConvTest.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsTestPrimer">
+                      <Label resid="UtilsTestPrimer.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsTestPrimer.Label" />
+                        <Description resid="UtilsTestPrimer.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="FileSaveAsWordDocx" />
+                        <bt:Image size="32" resid="FileSaveAsWordDocx" />
+                        <bt:Image size="80" resid="FileSaveAsWordDocx" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsTestPrimer.Url" />
+                      </Action>
+                    </Item>
+                    <Item id="UtilsMoodleText">
+                      <Label resid="UtilsMoodleText.LabelShort"/>
+                      <Supertip>
+                        <Title resid="UtilsMoodleText.Label" />
+                        <Description resid="UtilsMoodleText.Tooltip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="SetLanguage" />
+                        <bt:Image size="32" resid="SetLanguage" />
+                        <bt:Image size="80" resid="SetLanguage" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                        <TaskpaneId>ButtonId1</TaskpaneId>
+                        <SourceLocation resid="UtilsMoodleText.Url" />
+                      </Action>
+                    </Item>
+                 </Items>
+                 <Icon>
+                  <bt:Image size="16" resid="CustomGallery1"/>
+                  <bt:Image size="32" resid="CustomGallery1"/>
+                  <bt:Image size="80" resid="CustomGallery1"/>
+                </Icon>
+                </Control>
+              </Group>
+
+              <Label resid="assistantLabel"/>
+            </CustomTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="FileSaveAsWordDocx" DefaultValue="https://localhost:3000/assets/FileSaveAsWordDocx.png"/>
+        <bt:Image id="FileSaveAsWordDotx" DefaultValue="https://localhost:3000/assets/FileSaveAsWordDotx.png"/>
+        <bt:Image id="QueryShowTable" DefaultValue="https://localhost:3000/assets/QueryShowTable.png"/>
+        <bt:Image id="FileSaveAs" DefaultValue="https://localhost:3000/assets/FileSaveAs.png"/>
+        <bt:Image id="Help" DefaultValue="https://localhost:3000/assets/Help.png"/>
+        <bt:Image id="QuickStylesSets" DefaultValue="https://localhost:3000/assets/QuickStylesSets.png"/>
+        <bt:Image id="FunctionsTextInsertGallery" DefaultValue="https://localhost:3000/assets/FunctionsTextInsertGallery.png"/>
+        <bt:Image id="PageOrientationLandscape" DefaultValue="https://localhost:3000/assets/PageOrientationLandscape.png"/>
+        <bt:Image id="PageOrientationPortrait" DefaultValue="https://localhost:3000/assets/PageOrientationPortrait.png"/>
+        <bt:Image id="PasteSpecialDialog" DefaultValue="https://localhost:3000/assets/PasteSpecialDialog.png"/>
+        <bt:Image id="Paste" DefaultValue="https://localhost:3000/assets/Paste.png"/>
+        <bt:Image id="EditIcon" DefaultValue="https://localhost:3000/assets/EditIcon.png"/>
+        <bt:Image id="ComboBox" DefaultValue="https://localhost:3000/assets/ComboBox.png"/>
+        <bt:Image id="DatasheetColumnRename" DefaultValue="https://localhost:3000/assets/DatasheetColumnRename.png"/>
+        <bt:Image id="PropertiesForm" DefaultValue="https://localhost:3000/assets/PropertiesForm.png"/>
+        <bt:Image id="SourceControlShareObjects" DefaultValue="https://localhost:3000/assets/SourceControlShareObjects.png"/>
+        <bt:Image id="Refresh" DefaultValue="https://localhost:3000/assets/Refresh.png"/>
+        <bt:Image id="TableSharePointLMW" DefaultValue="https://localhost:3000/assets/TableSharePointLMW.png"/>
+        <bt:Image id="QueryDelete" DefaultValue="https://localhost:3000/assets/QueryDelete.png"/>
+        <bt:Image id="TableUnlinkExternalData" DefaultValue="https://localhost:3000/assets/TableUnlinkExternalData.png"/>
+        <bt:Image id="FormControlLabel" DefaultValue="https://localhost:3000/assets/FormControlLabel.png"/>
+        <bt:Image id="A" DefaultValue="https://localhost:3000/assets/A.png"/>
+        <bt:Image id="AlignCenter" DefaultValue="https://localhost:3000/assets/AlignCenter.png"/>
+        <bt:Image id="AsianLayoutMenu" DefaultValue="https://localhost:3000/assets/AsianLayoutMenu.png"/>
+        <bt:Image id="ContentControlPicture" DefaultValue="https://localhost:3000/assets/ContentControlPicture.png"/>
+        <bt:Image id="AutoSum" DefaultValue="https://localhost:3000/assets/AutoSum.png"/>
+        <bt:Image id="TextReflectionGallery" DefaultValue="https://localhost:3000/assets/TextReflectionGallery.png"/>
+        <bt:Image id="_1" DefaultValue="https://localhost:3000/assets/_1.png"/>
+        <bt:Image id="_2" DefaultValue="https://localhost:3000/assets/_2.png"/>
+        <bt:Image id="_3" DefaultValue="https://localhost:3000/assets/_3.png"/>
+        <bt:Image id="ControlSpecialEffectChiseled" DefaultValue="https://localhost:3000/assets/ControlSpecialEffectChiseled.png"/>
+        <bt:Image id="FormControlEditBox" DefaultValue="https://localhost:3000/assets/FormControlEditBox.png"/>
+        <bt:Image id="OutlinePromote" DefaultValue="https://localhost:3000/assets/OutlinePromote.png"/>
+        <bt:Image id="OutlineGroup" DefaultValue="https://localhost:3000/assets/OutlineGroup.png"/>
+        <bt:Image id="TripaneViewMode" DefaultValue="https://localhost:3000/assets/TripaneViewMode.png"/>
+        <bt:Image id="FileLinksToFiles" DefaultValue="https://localhost:3000/assets/FileLinksToFiles.png"/>
+        <bt:Image id="ReplaceWithAutoText" DefaultValue="https://localhost:3000/assets/ReplaceWithAutoText.png"/>
+        <bt:Image id="AutoLinkingStop" DefaultValue="https://localhost:3000/assets/AutoLinkingStop.png"/>
+        <bt:Image id="ListSetNumberingValue" DefaultValue="https://localhost:3000/assets/ListSetNumberingValue.png"/>
+        <bt:Image id="PictureInsertFromFilePowerPoint" DefaultValue="https://localhost:3000/assets/PictureInsertFromFilePowerPoint.png"/>
+        <bt:Image id="TableInsert" DefaultValue="https://localhost:3000/assets/TableInsert.png"/>
+        <bt:Image id="EquationEdit" DefaultValue="https://localhost:3000/assets/EquationEdit.png"/>
+        <bt:Image id="CustomBibliographyGallery" DefaultValue="https://localhost:3000/assets/CustomBibliographyGallery.png"/>
+        <bt:Image id="CustomGallery1" DefaultValue="https://localhost:3000/assets/CustomGallery1.png"/>
+        <bt:Image id="WordCountList" DefaultValue="https://localhost:3000/assets/WordCountList.png"/>
+        <bt:Image id="FormattingUnique" DefaultValue="https://localhost:3000/assets/FormattingUnique.png"/>
+        <bt:Image id="CreateReportFromWizard" DefaultValue="https://localhost:3000/assets/CreateReportFromWizard.png"/>
+        <bt:Image id="AccessTableContacts" DefaultValue="https://localhost:3000/assets/AccessTableContacts.png"/>
+        <bt:Image id="DefinePrintStyles" DefaultValue="https://localhost:3000/assets/DefinePrintStyles.png"/>
+        <bt:Image id="AnimationPreview" DefaultValue="https://localhost:3000/assets/AnimationPreview.png"/>
+        <bt:Image id="FileOpen" DefaultValue="https://localhost:3000/assets/FileOpen.png"/>
+        <bt:Image id="BibliographyAddNewSource" DefaultValue="https://localhost:3000/assets/BibliographyAddNewSource.png"/>
+        <bt:Image id="OutlineDemote" DefaultValue="https://localhost:3000/assets/OutlineDemote.png"/>
+        <bt:Image id="BlogPublishDraft" DefaultValue="https://localhost:3000/assets/BlogPublishDraft.png"/>
+        <bt:Image id="GroupTools" DefaultValue="https://localhost:3000/assets/GroupTools.png"/>
+        <bt:Image id="ImportTextFile" DefaultValue="https://localhost:3000/assets/ImportTextFile.png"/>
+        <bt:Image id="ImagerScan" DefaultValue="https://localhost:3000/assets/ImagerScan.png"/>
+        <bt:Image id="ReviewNewComment" DefaultValue="https://localhost:3000/assets/ReviewNewComment.png"/>
+        <bt:Image id="FieldShading" DefaultValue="https://localhost:3000/assets/FieldShading.png"/>
+        <bt:Image id="DataValidation" DefaultValue="https://localhost:3000/assets/DataValidation.png"/>
+        <bt:Image id="SetLanguage" DefaultValue="https://localhost:3000/assets/SetLanguage.png"/>
+        <bt:Image id="FunctionWizard" DefaultValue="https://localhost:3000/assets/FunctionWizard.png"/>
+        <bt:Image id="MagicEightBall" DefaultValue="https://localhost:3000/assets/MagicEightBall.png"/>
+        <bt:Image id="Calculator" DefaultValue="https://localhost:3000/assets/Calculator.png"/>
+        <bt:Image id="AppointmentColor1" DefaultValue="https://localhost:3000/assets/AppointmentColor1.png"/>
+        <bt:Image id="AppointmentColor10" DefaultValue="https://localhost:3000/assets/AppointmentColor10.png"/>
+        <bt:Image id="Strikethrough" DefaultValue="https://localhost:3000/assets/Strikethrough.png"/>
+        <bt:Image id="SlideShowRehearseTimings" DefaultValue="https://localhost:3000/assets/SlideShowRehearseTimings.png"/>
+        <bt:Image id="AddressBook" DefaultValue="https://localhost:3000/assets/AddressBook.png"/>
+        <bt:Image id="Export" DefaultValue="https://localhost:3000/assets/Export.png"/>
+        <bt:Image id="SetLanguage" DefaultValue="https://localhost:3000/assets/SetLanguage.png"/>
+        <bt:Image id="Empty" DefaultValue="https://localhost:3000/assets/Empty.png"/>
+        
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/commands.html"/> 
+
+        <bt:Url id="ProfilesControl.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="NewProfile.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="SaveProfile.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+
+        <bt:Url id="VstavkaBezFormata.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstShab.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstGor.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstVert.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstMeta.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstDoc.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="PometkaEdit.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstPoleSpisok.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstPoleFormText.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="PropPole.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstSvaz.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        
+        <bt:Url id="ObnPol.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="ObnForm.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UdalVnSv.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="RazorSv.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+
+        <bt:Url id="StlTextCenter.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="StlTextRazr.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="StlRisSet.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="StlFormulaDescr.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="StlHeader1.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="StlHeader2.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="StlHeader3.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="StlNumProstSet.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="StlNumPlus.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="StlNumMinus.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+
+        <bt:Url id="VstAvtoSs.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstSs.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="IsprSs.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="ParamNum.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstNris.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstTab.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstForm.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstLit.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstPril.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstPunkt.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsInsertPageN.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+
+        <bt:Url id="OpenSpisok.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="Params.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="Zapusk.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="MshOtkrPapku.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="OpenReserve.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="MShLeft.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="MShRight.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="MshRedPol.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+
+        <bt:Url id="Opt.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="Integr.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsIsertFromScaner.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstKomm.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="ZatPol.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTabl.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsOgl.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsLit.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTest.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsRedForm.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsPropis.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsCalc.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsColorText.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsColorBack.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsStrikeText.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="VstData.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsPrint.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="ExportPDF.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTablPovtNum.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTablDobProd.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTablDobOkon.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTablPeremesh.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+
+        <bt:Url id="UtilsOglVst.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsOglObnStr.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsLitSortAbc.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsLitSortUpom.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTestGIFT.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTestIspring.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTestGIFT_import.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTestIspring_import.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsConvTest.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsTestPrimer.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="UtilsMoodleText.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+
+        <bt:Url id="AboutProg.Url" DefaultValue="https://localhost:3000/aboutProg.html"/>
+
+      </bt:Urls>
+      <bt:ShortStrings>
+
+        <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
+        <bt:String id="assistantLabel" DefaultValue="ТестАссистент"/>
+
+        <bt:String id="Profiles.Label" DefaultValue="Профили"/>
+        <bt:String id="ProfilesControl.Label" DefaultValue="Управление профилями"/>
+        <bt:String id="NewProfile.LabelShort" DefaultValue="Создать"/>
+        <bt:String id="NewProfile.Label" DefaultValue="Создать новый профиль"/>
+        <bt:String id="SaveProfile.LabelShort" DefaultValue="Сохранить"/>
+        <bt:String id="SaveProfile.Label" DefaultValue="Сохранить изменения текущего профиля"/>
+
+        <bt:String id="AboutProg.LabelShort" DefaultValue="О программе"/>
+        <bt:String id="AboutProg.Label" DefaultValue="Информация о программе"/>
+
+        <bt:String id="Ass_Insert.Label" DefaultValue="Вставка"/>
+        <bt:String id="VstavkaBezFormata.LabelShort" DefaultValue="Вставить без формата"/>
+        <bt:String id="VstavkaBezFormata.Label" DefaultValue="Вставить без форматирования (Alt+W) или с форматированием окружающего текста (Alt+Shift+W)"/>
+        <bt:String id="VstShab.LabelShort" DefaultValue="Шаблон текста"/>
+        <bt:String id="VstShab.Label" DefaultValue="Вставка шаблона текста"/>
+        <bt:String id="VstGor.LabelShort" DefaultValue="Гор. страница"/>
+        <bt:String id="VstGor.Label" DefaultValue="Вставка горизонтальной страницы"/>
+        <bt:String id="Proch.LabelShort" DefaultValue="Прочее"/>
+        <bt:String id="Proch.Label" DefaultValue="Прочее"/>
+        <bt:String id="VstVert.LabelShort" DefaultValue="Верт. страница"/>
+        <bt:String id="VstVert.Label" DefaultValue="Вставка вертикальной страницы"/>
+        <bt:String id="VstMeta.LabelShort" DefaultValue="Метафайл"/>
+        <bt:String id="VstMeta.Label" DefaultValue="Вставка содержимого буфера обмена в формате метафайла (Alt+P)"/>
+        <bt:String id="VstDoc.LabelShort" DefaultValue="Влож. документ"/>
+        <bt:String id="VstDoc.Label" DefaultValue="Вставка содержимого буфера обмена в формате вложенного документа"/>
+        <bt:String id="PometkaEdit.LabelShort" DefaultValue="Выделить/снять выделение для редактирования"/>
+        <bt:String id="PometkaEdit.Label" DefaultValue="Пометить выделенный фрагмент или снять выделение для редактирования текста (Ctrl+Alt+E)"/>
+        <bt:String id="VstPoleSpisok.LabelShort" DefaultValue="Поле со списком"/>
+        <bt:String id="VstPoleSpisok.Label" DefaultValue="Вставить поле со списком"/>
+        <bt:String id="VstPoleFormText.LabelShort" DefaultValue="Поле форматированного текста"/>
+        <bt:String id="VstPoleFormText.Label" DefaultValue="Вставить поле форматированного текста (Alt+Shift+G)"/>
+        <bt:String id="PropPole.LabelShort" DefaultValue="Свойства поля"/>
+        <bt:String id="PropPole.Label" DefaultValue="Отобразить окно свойств выделенного поля"/>
+        <bt:String id="VstSvaz.LabelShort" DefaultValue="Cвязь с текстом"/>
+        <bt:String id="VstSvaz.Label" DefaultValue="Вставить связь (Alt+L)"/>
+
+        <bt:String id="Ass_Upd.Label" DefaultValue="Обновление"/>
+        <bt:String id="ObnPol.LabelShort" DefaultValue="Обновить поля"/>
+        <bt:String id="ObnPol.Label" DefaultValue="Обновить поля в документе (F10)"/>
+        <bt:String id="ObnForm.LabelShort" DefaultValue="Обн. формулы"/>
+        <bt:String id="ObnForm.Label" DefaultValue="Обновить формулы в документе (Ctrl+Alt+F10)"/>
+        <bt:String id="UdalVnSv.LabelShort" DefaultValue="Удалить связи"/>
+        <bt:String id="UdalVnSv.Label" DefaultValue="Удалить внешние связи с другими документами"/>
+        <bt:String id="RazorSv.LabelShort" DefaultValue="Разорвать связи"/>
+        <bt:String id="RazorSv.Label" DefaultValue="Разорвать все связи и преобразовать поля в текст"/>
+
+        <bt:String id="StlTextSet.LabelShort" DefaultValue="Текст"/>
+        <bt:String id="StlTextSet.Label" DefaultValue="Текстовый стиль (Alt+T)"/>
+        <bt:String id="StlTextCenter.LabelShort" DefaultValue="По центру"/>
+        <bt:String id="StlTextCenter.Label" DefaultValue="Текстовый стиль по центру (Alt+B)"/>
+        <bt:String id="StlTextRazr.LabelShort" DefaultValue="Р а з р я д к а"/>
+        <bt:String id="StlTextRazr.Label" DefaultValue="Текстовый стиль с разрядкой (Alt+Shift+R)"/>
+        <bt:String id="StlRisSet.LabelShort" DefaultValue="Рисунок"/>
+        <bt:String id="StlRisSet.Label" DefaultValue="Стиль рисунка (Alt+R)"/>
+        <bt:String id="StlFormulaSet.LabelShort" DefaultValue="Формула"/>
+        <bt:String id="StlFormulaSet.Label" DefaultValue="Стиль формулы (Alt+F)"/>
+        <bt:String id="StlFormulaDescr.LabelShort" DefaultValue="Описание формулы"/>
+        <bt:String id="StlFormulaDescr.Label" DefaultValue="Стиль описания формулы (Alt+D)"/>
+        <bt:String id="StlHeaderSet.LabelShort" DefaultValue="Заголовок"/>
+        <bt:String id="StlHeaderSet.Label" DefaultValue="Стиль заголовка без нумерации (Alt+Ё)"/>
+        <bt:String id="StlHeader1.LabelShort" DefaultValue="Заголовок 1 (раздел)"/>
+        <bt:String id="StlHeader1.Label" DefaultValue="Стиль заголовка раздела (Alt+1)"/>
+        <bt:String id="StlHeader2.LabelShort" DefaultValue="Заголовок 2 (подраздел)"/>
+        <bt:String id="StlHeader2.Label" DefaultValue="Стиль заголовка подраздела (Alt+2)"/>
+        <bt:String id="StlHeader3.LabelShort" DefaultValue="Заголовок 3 (пункт)"/>
+        <bt:String id="StlHeader3.Label" DefaultValue="Стиль заголовка пункта (Alt+3)"/>
+        <bt:String id="StlNumProstSet.LabelShort" DefaultValue="Перечисление"/>
+        <bt:String id="StlNumProstSet.Label" DefaultValue="Стиль перечисления (Ctrl+Ё)"/>
+        <bt:String id="StlNumSet.LabelShort" DefaultValue="Нумерация"/>
+        <bt:String id="StlNumSet.Label" DefaultValue="Стиль нумерации (Ctrl+Shift+Ё)"/>
+        <bt:String id="StlNumPlus.LabelShort" DefaultValue="Повысить уровень ..."/>
+        <bt:String id="StlNumPlus.Label" DefaultValue="Повысить уровень нумерации"/>
+        <bt:String id="StlNumMinus.LabelShort" DefaultValue="Понизить уровень ..."/>
+        <bt:String id="StlNumMinus.Label" DefaultValue="Понизить уровень нумерации"/>
+
+        <bt:String id="Ass_Numb.Label" DefaultValue="Нумерация"/>
+        <bt:String id="VstAvtoSs.LabelShort" DefaultValue="Авто ссылка"/>
+        <bt:String id="VstAvtoSs.Label" DefaultValue="Вставка автоматической ссылки (Alt+Q)"/>
+        <bt:String id="VstSs.LabelShort" DefaultValue="Вставка"/>
+        <bt:String id="VstSs.Label" DefaultValue="Вставка ссылки на определенный тип нумерации (Alt+Shift+Q)"/>
+        <bt:String id="IsprSs.LabelShort" DefaultValue="Исправить"/>
+        <bt:String id="IsprSs.Label" DefaultValue="Исправление не работающих ссылок на нумерацию"/>
+        <bt:String id="ParamNum.LabelShort" DefaultValue="Параметры нумерации"/>
+        <bt:String id="ParamNum.Label" DefaultValue="Открыть параметры нумерации"/>
+        <bt:String id="VstNris.LabelShort" DefaultValue="Вставка номера рисунка (Ctrl+1)"/>
+        <bt:String id="VstNris.Label" DefaultValue="Вставка номера рисунка (Ctrl+1)"/>
+        <bt:String id="VstTab.LabelShort" DefaultValue="Вставка номера таблицы (Ctrl+2)"/>
+        <bt:String id="VstTab.Label" DefaultValue="Вставка номера таблицы (Ctrl+2)"/>
+        <bt:String id="VstForm.LabelShort" DefaultValue="Вставка номера формулы (Ctrl+3)"/>
+        <bt:String id="VstForm.Label" DefaultValue="Вставка номера формулы (Ctrl+3)"/>
+        <bt:String id="VstLit.LabelShort" DefaultValue="Вставка номера литературы (Ctrl+4)"/>
+        <bt:String id="VstLit.Label" DefaultValue="Вставка номера литературы (Ctrl+4)"/>
+        <bt:String id="VstPril.LabelShort" DefaultValue="Вставка номера приложения (Ctrl+5)"/>
+        <bt:String id="VstPril.Label" DefaultValue="Вставка номера приложения (Ctrl+5)"/>
+        <bt:String id="VstPunkt.LabelShort" DefaultValue="Вставка номера пункта (Ctrl+6)"/>
+        <bt:String id="VstPunkt.Label" DefaultValue="Вставка номера пункта (Ctrl+6)"/>
+        <bt:String id="UtilsInsertPageN.LabelShort" DefaultValue="Вставить номер страницы"/>
+        <bt:String id="UtilsInsertPageN.Label" DefaultValue="Вставить номер страницы"/>
+
+        <bt:String id="Mast_Shab.Label" DefaultValue="Мастер шаблонов"/>
+        <bt:String id="OpenSpisok.LabelShort" DefaultValue="Открыть список"/>
+        <bt:String id="OpenSpisok.Label" DefaultValue="Открыть список для выбора данных (Alt+S)"/>
+        <bt:String id="Params.LabelShort" DefaultValue="Параметры"/>
+        <bt:String id="Params.Label" DefaultValue="Открыть установки параметров (настроек) мастера шаблонов"/>
+        <bt:String id="Zapusk.LabelShort" DefaultValue="Запуск"/>
+        <bt:String id="Zapusk.Label" DefaultValue="Запуск генерации документа или потока документов (Alt+Shift+S)"/>
+        <bt:String id="MshOtkrPapku.LabelShort" DefaultValue="Открыть папку с результатами"/>
+        <bt:String id="MshOtkrPapku.Label" DefaultValue="Открыть папку с результатами"/>
+        <bt:String id="OpenReserve.LabelShort" DefaultValue="Открыть резерв документа"/>
+        <bt:String id="OpenReserve.Label" DefaultValue="Открыть резерв документа"/>
+        <bt:String id="MShLeft.LabelShort" DefaultValue="Вернуться к предыдущему элементу"/>
+        <bt:String id="MShLeft.Label" DefaultValue="Вернуться к предыдущему элементу"/>
+        <bt:String id="MShRight.LabelShort" DefaultValue="Перейти к следующему элементу"/>
+        <bt:String id="MShRight.Label" DefaultValue="Перейти к следующему элементу"/>
+        <bt:String id="MshRedPol.LabelShort" DefaultValue="Редактор"/>
+        <bt:String id="MshRedPol.Label" DefaultValue="Редактор полей"/>
+
+        <bt:String id="Ass_Serv.LabelShort" DefaultValue="Сервис"/>
+        <bt:String id="Ass_Serv.Label" DefaultValue="Сервис"/>
+        <bt:String id="Opt.LabelShort" DefaultValue="Настройки программы"/>
+        <bt:String id="Opt.Label" DefaultValue="Настройки программы"/>
+        <bt:String id="Integr.LabelShort" DefaultValue="Интегр."/>
+        <bt:String id="Integr.Label" DefaultValue="Интеграция Ассистента"/>
+        <bt:String id="UtilsIsertFromScaner.LabelShort" DefaultValue="Сканер"/>
+        <bt:String id="UtilsIsertFromScaner.Label" DefaultValue="Вставка избражения со сканера"/>
+        <bt:String id="VstKomm.LabelShort" DefaultValue="Коммент"/>
+        <bt:String id="VstKomm.Label" DefaultValue="Вставить комментарий (Alt+Z)"/>
+        <bt:String id="ZatPol.LabelShort" DefaultValue="Поля"/>
+        <bt:String id="ZatPol.Label" DefaultValue="Отобразить или скрыть затенение полей"/>
+        <bt:String id="Utils.LabelShort" DefaultValue="Дополнительно"/>
+        <bt:String id="Utils.Label" DefaultValue="Дополнительно"/>
+        <bt:String id="UtilsGroup.LabelShort" DefaultValue="Дополнительно"/>
+        <bt:String id="UtilsGroup.Label" DefaultValue="Дополнительно"/>
+        <bt:String id="UtilsTabl.LabelShort" DefaultValue="Таблицы"/>
+        <bt:String id="UtilsTabl.Label" DefaultValue="Таблицы"/>
+        <bt:String id="UtilsOgl.LabelShort" DefaultValue="Оглавление"/>
+        <bt:String id="UtilsOgl.Label" DefaultValue="Оглавление"/>
+        <bt:String id="UtilsLit.LabelShort" DefaultValue="Список литературы"/>
+        <bt:String id="UtilsLit.Label" DefaultValue="Список литературы"/>
+        <bt:String id="UtilsTest.LabelShort" DefaultValue="Работа с системами дист. обучения"/>
+        <bt:String id="UtilsTest.Label" DefaultValue="Работа с системами дист. обучения"/>
+        <bt:String id="UtilsRedForm.LabelShort" DefaultValue="Редактор формул"/>
+        <bt:String id="UtilsRedForm.Label" DefaultValue="Вставить формулу (Alt+E)"/>
+        <bt:String id="UtilsPropis.LabelShort" DefaultValue="Число в текст"/>
+        <bt:String id="UtilsPropis.Label" DefaultValue="Число в текст (Alt+G)"/>
+        <bt:String id="UtilsCalc.LabelShort" DefaultValue="Вычислить выделение"/>
+        <bt:String id="UtilsCalc.Label" DefaultValue="Вычислить выделенное арифметическое выражение (Alt+Shift+E)"/>
+        <bt:String id="UtilsColorText.LabelShort" DefaultValue="Выделить текст"/>
+        <bt:String id="UtilsColorText.Label" DefaultValue="Выделить текст (Alt+X)"/>
+        <bt:String id="UtilsColorBack.LabelShort" DefaultValue="Выделить фон"/>
+        <bt:String id="UtilsColorBack.Label" DefaultValue="Выделить фон (Alt+V)"/>
+        <bt:String id="UtilsStrikeText.LabelShort" DefaultValue="Зачеркнуть"/>
+        <bt:String id="UtilsStrikeText.Label" DefaultValue="Зачеркнуть текст (Alt+C)"/>
+        <bt:String id="VstData.LabelShort" DefaultValue="Текущая дата"/>
+        <bt:String id="VstData.Label" DefaultValue="Вставить текущую дату (Ctrl+Shift+D)"/>
+        <bt:String id="UtilsPrint.LabelShort" DefaultValue="Печать брошюр"/>
+        <bt:String id="UtilsPrint.Label" DefaultValue="Печать брошюр (Alt+Shift+P)"/>
+        <bt:String id="ExportPDF.LabelShort" DefaultValue="Экспорт в PDF"/>
+        <bt:String id="ExportPDF.Label" DefaultValue="Экспортировать текущий/выбранные документы в PDF (Ctrl+Shift+E)"/>
+
+        <bt:String id="UtilsTablPovtNum.LabelShort" DefaultValue="Повторить нумерацию столбцов"/>
+        <bt:String id="UtilsTablPovtNum.Label" DefaultValue="Повторить нумерацию столбцов таблицы (Alt+N)"/>
+        <bt:String id="UtilsTablDobProd.LabelShort" DefaultValue="Добавить заголовок продолжения"/>
+        <bt:String id="UtilsTablDobProd.Label" DefaultValue="Добавить заголовок продолжения таблицы"/>
+        <bt:String id="UtilsTablDobOkon.LabelShort" DefaultValue="Добавить заголовок окончания"/>
+        <bt:String id="UtilsTablDobOkon.Label" DefaultValue="Добавить заголовок окончания таблицы"/>
+        <bt:String id="UtilsTablPeremesh.LabelShort" DefaultValue="Перемешивание строк таблицы"/>
+        <bt:String id="UtilsTablPeremesh.Label" DefaultValue="Перемешивание строк таблицы"/>
+
+        <bt:String id="UtilsOglVst.LabelShort" DefaultValue="Вставить/обновить оглавление"/>
+        <bt:String id="UtilsOglVst.Label" DefaultValue="Вставить/обновить оглавление (Alt+O)"/>
+        <bt:String id="UtilsOglObnStr.LabelShort" DefaultValue="Обновить страницы оглавления"/>
+        <bt:String id="UtilsOglObnStr.Label" DefaultValue="Добавить заголовок продолжения таблицы"/>
+
+        <bt:String id="UtilsLitSortAbc.LabelShort" DefaultValue="Сортировать список литературы по алфавиту"/>
+        <bt:String id="UtilsLitSortAbc.Label" DefaultValue="Сортировать список литературы по алфавиту"/>
+        <bt:String id="UtilsLitSortUpom.LabelShort" DefaultValue="Сортировать список литературы по порядку упоминания в тексте"/>
+        <bt:String id="UtilsLitSortUpom.Label" DefaultValue="Сортировать список литературы по порядку упоминания в тексте"/>
+
+        <bt:String id="UtilsTestGIFT.LabelShort" DefaultValue="Создать тест из документа (выделенного фрагмента) в формате GIFT"/>
+        <bt:String id="UtilsTestGIFT.Label" DefaultValue="Тест создается для импорта в системы дистанционного обучения, например Moodle"/>
+        <bt:String id="UtilsTestIspring.LabelShort" DefaultValue="Создать тест из документа (выделенного фрагмента) в формате Ispring"/>
+        <bt:String id="UtilsTestIspring.Label" DefaultValue="Тест создается для импорта в Ispring Suite"/>
+        <bt:String id="UtilsTestGIFT_import.LabelShort" DefaultValue="Импортировать тест в формате GIFT в текущий документ"/>
+        <bt:String id="UtilsTestGIFT_import.Label" DefaultValue="Тест импортируется из формата систем дистанционного обучения, например Moodle"/>
+        <bt:String id="UtilsTestIspring_imp.LabelShort" DefaultValue="Импортировать тест в формате Ispring в текущий документ"/>
+        <bt:String id="UtilsTestIspring_import.Label" DefaultValue="Тест импортируется из формата Ispring"/>
+        <bt:String id="UtilsConvTest.LabelShort" DefaultValue="Конвертировать активную таблицу с тестом (где курсор) в формат для экспорта в GIFT или Ispring"/>
+        <bt:String id="UtilsConvTest.Label" DefaultValue="Все объекты вложенные в ячейки таблицы преобразовываются автоматически"/>
+        <bt:String id="UtilsTestPrimer.LabelShort" DefaultValue="Открыть пример оформления теста"/>
+        <bt:String id="UtilsTestPrimer.Label" DefaultValue="Образец теста с основными возможностями программы"/>
+        <bt:String id="UtilsMoodleText.LabelShort" DefaultValue="Создать главу электронной книги Moodle из документа (выделенного фрагмента)"/>
+        <bt:String id="UtilsMoodleText.Label" DefaultValue="Глава создается для последующего импорта в Moodle"/>
+
+        <bt:String id="Ass_Style.Label" DefaultValue="Стили"/>
+
+      </bt:ShortStrings>
+      <bt:LongStrings>
+
+        <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded succesfully. Go to the HOME tab and click the 'Show Taskpane' button to get started."/>
+        
+        <bt:String id="ProfilesControl.Tooltip" DefaultValue="Переименование, удаление и применение необходимых профилей оформления текста"/>
+        <bt:String id="NewProfile.Tooltip" DefaultValue="Создание нового профиля на основе параметров текущего дкумента"/>
+        <bt:String id="SaveProfile.Tooltip" DefaultValue="Сохранение всех изменений текущего профиля (параметры стилей, нумерации, абзацев и т.д.)"/>
+      
+        <bt:String id="VstavkaBezFormata.Tooltip" DefaultValue="Вставка текста, скопированного в буфер обмена, без форматирования или с форматированием окружающего текста"/>
+        <bt:String id="VstShab.Tooltip" DefaultValue="Вставка шаблонов текста (титульные листы, рамки с основной надписью и т.д.) в текущую позицию курсора"/>
+        <bt:String id="VstGor.Tooltip" DefaultValue="Вставить горизонтальную страницу в текущую позицию курсора"/>
+        <bt:String id="Proch.Tooltip" DefaultValue="Прочее"/>
+        <bt:String id="VstVert.Tooltip" DefaultValue="Вставить вертикальную страницу в текущую позицию курсора"/>
+        <bt:String id="VstMeta.Tooltip" DefaultValue="Вставить содержимое буфера обмена в формате метафайла (меньший размер, без возможности редактирования)"/>
+        <bt:String id="VstDoc.Tooltip" DefaultValue="Вставить содержимое буфера обмена в формате вложенного документа (больший размер, c возможностью редактирования)"/>
+        <bt:String id="PometkaEdit.Tooltip" DefaultValue="Пометить выделенный фрагмент или снять выделение для редактирования текста"/>
+        <bt:String id="VstPoleSpisok.Tooltip" DefaultValue="Вставить поле со списком для быстрого выбора вариантов текста"/>
+        <bt:String id="VstPoleFormText.Tooltip" DefaultValue="Вставить поле форматированного текста для выделенного фрагмента, чтобы использовать в качестве связи в дальнейшем"/>
+        <bt:String id="PropPole.Tooltip" DefaultValue="Отобразить окно свойств выделенного поля (список, текст и т.д.)"/>
+        <bt:String id="VstSvaz.Tooltip" DefaultValue="Вставка связи на текст скопированный в буфер обмена"/>
+
+        <bt:String id="ObnPol.Tooltip" DefaultValue="Расширенное обновление полей в документе, с учетом полей в тексте графических объектов"/>
+        <bt:String id="ObnForm.Tooltip" DefaultValue="Обновление всех формул в документе в соответствии с настройками Microsoft Equation"/>
+        <bt:String id="UdalVnSv.Tooltip" DefaultValue="Удаление из структуры связей внешних ссылок и оптимизация текстовых объектов (графики, диаграммы и т.д.)"/>
+        <bt:String id="RazorSv.Tooltip" DefaultValue="Разрыв связей и преобразование полей в текст. После данного действия нумерация и все остальные поля превращаются в простой текст"/>
+
+        <bt:String id="StlTextSet.Tooltip" DefaultValue="Применить текстовый стиль к выделенному фрагменту"/>
+        <bt:String id="StlTextCenter.Tooltip" DefaultValue="Применить текстовый стиль по центру к выделенному фрагменту"/>
+        <bt:String id="StlTextRazr.Tooltip" DefaultValue="Применить текстовый стиль с разрядкой к выделенному фрагменту"/>
+        <bt:String id="StlRisSet.Tooltip" DefaultValue="Применить стиль рисунка к выделенному фрагменту"/>
+        <bt:String id="StlFormulaSet.Tooltip" DefaultValue="Применить стиль формулы к выделенному фрагменту"/>
+        <bt:String id="StlFormulaDescr.Tooltip" DefaultValue="Применить стиль описания формулы к выделенному фрагменту"/>
+        <bt:String id="StlHeaderSet.Tooltip" DefaultValue="Применить стиль заголовка без нумерации к выделенному фрагменту"/>
+        <bt:String id="StlHeader1.Tooltip" DefaultValue="Применить стиль заголовка раздела к выделенному фрагменту"/>
+        <bt:String id="StlHeader2.Tooltip" DefaultValue="Применить стиль заголовка подраздела к выделенному фрагменту"/>
+        <bt:String id="StlHeader3.Tooltip" DefaultValue="Применить стиль заголовка пункта к выделенному фрагменту"/>
+        <bt:String id="StlNumProstSet.Tooltip" DefaultValue="Применить стиль простого перечисления (маркер тире) к выделенному фрагменту"/>
+        <bt:String id="StlNumSet.Tooltip" DefaultValue="Применить стиль нумерации к выделенному фрагменту"/>
+        <bt:String id="StlNumPlus.Tooltip" DefaultValue="Повысить уровень нумерации выделенного фрагмента"/>
+        <bt:String id="StlNumMinus.Tooltip" DefaultValue="Понизить уровень нумерации выделенного фрагмента"/>
+      
+        <bt:String id="VstAvtoSs.Tooltip" DefaultValue="Вставка автоматической ссылки на следующий за курсором объект (рисунок, таблица и т.д.). Тип объекта определяется в соответствии с содержанием 5 символов текста до курсора (рис, табл и т.д.)"/>
+        <bt:String id="VstSs.Tooltip" DefaultValue="Вставить ссылку на номер объекта в документе (таблица, рисунок, формула и т.д.)"/>
+        <bt:String id="IsprSs.Tooltip" DefaultValue="Использовать в случае появления ошибки после обновления ссылки"/>
+        <bt:String id="ParamNum.Tooltip" DefaultValue="Изменение параметров нумерации (простая, сложная) и шаблона вставки номеров"/>
+        <bt:String id="VstNris.Tooltip" DefaultValue="Вставка следующего номера рисунка в текущую позицию курсора"/>
+        <bt:String id="VstTab.Tooltip" DefaultValue="Вставка следующего номера таблицы в текущую позицию курсора"/>
+        <bt:String id="VstForm.Tooltip" DefaultValue="Вставка следующего номера формулы в текущую позицию курсора"/>
+        <bt:String id="VstLit.Tooltip" DefaultValue="Вставка следующего номера литературы в текущую позицию курсора"/>
+        <bt:String id="VstPril.Tooltip" DefaultValue="Вставка следующего номера приложения (в цифровом формате) в текущую позицию курсора"/>
+        <bt:String id="VstPunkt.Tooltip" DefaultValue="Вставка следующего номера пункта (в цифровом формате) в текущую позицию курсора"/>
+        <bt:String id="UtilsInsertPageN.Tooltip" DefaultValue="Вставка номера страницы в нижний колонтитул активного листа"/>
+
+        <bt:String id="OpenSpisok.Tooltip" DefaultValue="Открыть список из базы данных (нескольких баз) для выбора загружаемых данных"/>
+        <bt:String id="Params.Tooltip" DefaultValue="Открыть установки параметров (настроек) мастера шаблонов"/>
+        <bt:String id="Zapusk.Tooltip" DefaultValue="Запуск генерации документа или потока документов"/>
+        <bt:String id="MshOtkrPapku.Tooltip" DefaultValue="Открыть папку с результатами"/>
+        <bt:String id="OpenReserve.Tooltip" DefaultValue="Открыть резерв документаи"/>
+        <bt:String id="MShLeft.Tooltip" DefaultValue="Вернуться к предыдущему элементу"/>
+        <bt:String id="MShRight.Tooltip" DefaultValue="Перейти к следующему элементу"/>
+        <bt:String id="MshRedPol.Tooltip" DefaultValue="Редактор полей"/>
+
+        <bt:String id="Ass_Serv.Tooltip" DefaultValue="Дополнительно"/>
+        <bt:String id="Opt.Tooltip" DefaultValue="Окно настроек программы (параметры вставки, обновления и т.д.)"/>
+        <bt:String id="Integr.Tooltip" DefaultValue="Интеграция Ассистента в текущий документ"/>
+        <bt:String id="UtilsIsertFromScaner.Tooltip" DefaultValue="Вставить изображение со сканера в текущий документ"/>
+        <bt:String id="VstKomm.Tooltip" DefaultValue="Вставка комментария для выделенного текста"/>
+        <bt:String id="ZatPol.Tooltip" DefaultValue="Данная опция используется для удобства работы с полями мастера шаблонов, последовательной нумерации, ссылок и т.д."/>
+        <bt:String id="Utils.Tooltip" DefaultValue="Дополнительно"/>
+        <bt:String id="UtilsGroup.Tooltip" DefaultValue="Дополнительно"/>
+        <bt:String id="UtilsTabl.Tooltip" DefaultValue="Таблицы"/>
+        <bt:String id="UtilsOgl.Tooltip" DefaultValue="Оглавление"/>
+        <bt:String id="UtilsLit.Tooltip" DefaultValue="Список литературы"/>
+        <bt:String id="UtilsTest.Tooltip" DefaultValue="Работа с системами дист. обучения"/>
+        <bt:String id="UtilsRedForm.Tooltip" DefaultValue="Вставка формулы Microsoft Equation"/>
+        <bt:String id="UtilsPropis.Tooltip" DefaultValue="Преобразовать число в текст"/>
+        <bt:String id="UtilsCalc.Tooltip" DefaultValue="Вычислить выделенное арифметическое выражение в формате поля данных"/>
+        <bt:String id="UtilsColorText.Tooltip" DefaultValue="Переключатель выделения текста с черного на красный цвет и обратно"/>
+        <bt:String id="UtilsColorBack.Tooltip" DefaultValue="Переключатель выделения фона с белого на желтый цвет и обратно"/>
+        <bt:String id="UtilsStrikeText.Tooltip" DefaultValue="Переключатель зачеркивания текста"/>
+        <bt:String id="VstData.Tooltip" DefaultValue="Вставка текущей даты в формате дд.мм.гггг"/>
+        <bt:String id="UtilsPrint.Tooltip" DefaultValue="Распечатать текущий документ в виде брошюры за 2 прогона (на любом принтере)"/>
+        <bt:String id="ExportPDF.Tooltip" DefaultValue="Экспорт производится в ту же папку, где сохранен исходный файл"/>
+
+        <bt:String id="UtilsTablPovtNum.Tooltip" DefaultValue="Повторить нумерацию столбцов таблицы на следующих страницах, используется для многостраничных таблиц"/>
+        <bt:String id="UtilsTablDobProd.Tooltip" DefaultValue="Добавление заголовка продолжения таблицы на текущей странице, используется для многостраничных таблиц"/>
+        <bt:String id="UtilsTablDobOkon.Tooltip" DefaultValue="Добавление заголовка окончания таблицы на текущей странице, используется для многостраничных таблиц"/>
+        <bt:String id="UtilsTablPeremesh.Tooltip" DefaultValue="Случайное перемешивание строк таблицы (например, для генерации заданий по вариантам)"/>
+
+        <bt:String id="UtilsOglVst.Tooltip" DefaultValue="Вставка нового или полное обновление существующего оглавления"/>
+        <bt:String id="UtilsOglObnStr.Tooltip" DefaultValue="Обновить только страницы оглавления (без обновления структуры)"/>
+
+        <bt:String id="UtilsLitSortAbc.Tooltip" DefaultValue="Сортировка списка литературы в алфавитном порядке и автоматическое исправление ссылок"/>
+        <bt:String id="UtilsLitSortUpom.Tooltip" DefaultValue="Сортировка списка литературы в порядке упоминания в тексте и автоматическое исправление ссылок"/>
+
+        <bt:String id="UtilsTestGIFT.Tooltip" DefaultValue="Тест создается в формате GIFT или GIFT with medias format в зависимости от наличия медиа-объектов в документе (выделенном фрагменте)"/>
+        <bt:String id="UtilsTestIspring.Tooltip" DefaultValue="Тест создается в формате Ispring (Excel) с учетом наличия медиа-объектов в документе (выделенном фрагменте)"/>
+        <bt:String id="UtilsTestGIFT_import.Tooltip" DefaultValue="Тест импортируется в простом текстовой формате GIFT (расширение txt) или GIFT with medias format (расширение zip)"/>
+        <bt:String id="UtilsTestIspring_import.Tooltip" DefaultValue="Тест импортируется из формата Ispring (Excel) с учетом наличия медиа-объектов"/>
+        <bt:String id="UtilsConvTest.Tooltip" DefaultValue="Образец оформления данной таблицы см. в данном разделе меню в файле примера теста"/>
+        <bt:String id="UtilsTestPrimer.Tooltip" DefaultValue="В тесте указаны примеры основных видов вопросов, которые можно экспортировать в формат GIFT"/>
+        <bt:String id="UtilsMoodleText.Tooltip" DefaultValue="При импорте в систему Moodle необходимо выбрать пункт - Импорт глав - Каждый HTML-файл представляет собой одну главу"/>
+     
+     
+        <bt:String id="AboutProg.Tooltip" DefaultValue="Информация об авторе программы, список изменений в версиях и инструкция"/>
+      
+      
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

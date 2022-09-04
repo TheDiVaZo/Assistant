@@ -1,0 +1,623 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+<ribbon startFromScratch="false">
+
+<tabs>
+    <tab id="tabAss" label="Ассистент">
+        <group id="Ass_Profiles" label="Профили" imageMso="FileSaveAsWordDotx" >
+
+	  <button id="Profiles" size="large" 
+		  label="Управление профилями" 
+		  screentip="Управление профилями"
+		  supertip="Переименование, удаление и применение необходимых профилей оформления текста"
+		  onAction="УправлениеПрофилями" imageMso="FileSaveAsWordDotx" />
+
+	  <button id="NewProfile" size="normal" 
+		  label="Новый" 
+		  screentip="Создать новый профиль"
+		  supertip="Создание нового профиля на основе параметров текущего дкумента"
+		  onAction="НовыйПрофиль" imageMso="QueryShowTable" />
+
+	  <button id="SaveProfile" size="normal" 
+		  label="Сохранить" 
+		  screentip="Сохранить изменения текущего профиля"
+		  supertip="Сохранение всех изменений текущего профиля (параметры стилей, нумерации, абзацев и т.д.)"
+		  onAction="СохранитьПрофиль" imageMso="FileSaveAs" />
+
+	  <button id="AboutProg" size="normal" 
+		  label="О программе" 
+		  screentip="Информация о программе"
+		  supertip="Информация об авторе программы, список изменений в версиях и инструкция"
+		  onAction="Справка" imageMso="Help" />
+
+
+        </group>
+
+        <group id="Ass_Insert" label="Вставка" imageMso="QuickStylesSets" >
+          
+	  <button id="VstavkaBezFormata" size="large" 
+		  label="Вставить без формата" 
+		  screentip="Вставить без форматирования (Alt+W) или с форматированием окружающего текста (Alt+Shift+W)"
+		  supertip="Вставка текста, скопированного в буфер обмена, без форматирования или с форматированием окружающего текста"		  
+		  onAction="ВстБезФорматПолн" imageMso="QuickStylesSets" />
+
+	  <button id="VstShab" size="normal" 
+		  label="Шаблон текста" 
+		  screentip="Вставка шаблона текста"
+		  supertip="Вставка шаблонов текста (титульные листы, рамки с основной надписью и т.д.) в текущую позицию курсора"		  
+		  onAction="ВстШабл" imageMso="FunctionsTextInsertGallery" />
+
+	  <button id="VstGor" size="normal" 
+		  label="Гор. страница" 
+		  screentip="Вставка горизонтальной страницы"
+		  supertip="Вставить горизонтальную страницу в текущую позицию курсора"		  
+		  onAction="ВстГорСтр" imageMso="PageOrientationLandscape" />
+
+	          <menu id="Proch" label="Прочее">
+
+			  <button id="VstVert"
+				  label="Верт. страница" 
+				  screentip="Вставка вертикальной страницы"
+				  supertip="Вставить вертикальную страницу в текущую позицию курсора"		  
+				  onAction="ВстВертСтр" imageMso="PageOrientationPortrait" />
+
+  		          <menuSeparator id="MenuSep6" />
+
+			  <button id="VstMeta"
+				  label="Метафайл" 
+				  screentip="Вставка содержимого буфера обмена в формате метафайла (Alt+P)"
+				  supertip="Вставить содержимое буфера обмена в формате метафайла (меньший размер, без возможности редактирования)"
+				  onAction="ВстРис" imageMso="PasteSpecialDialog" />
+
+			  <button id="VstDoc"
+				  label="Влож. документ" 
+				  screentip="Вставка содержимого буфера обмена в формате вложенного документа"
+				  supertip="Вставить содержимое буфера обмена в формате вложенного документа (больший размер, c возможностью редактирования)"
+				  onAction="ВстРис_Масшт" imageMso="Paste" />
+
+			  <menuSeparator id="MenuSep4_" />
+
+			  <button id="PometkaEdit"
+				  label="Выделить/снять выделение для редактирования" 
+				  screentip="Пометить выделенный фрагмент или снять выделение для редактирования текста (Ctrl+Alt+E)"
+				  supertip="Пометить выделенный фрагмент или снять выделение для редактирования текста"
+				  onAction="УстановитьСнятьРедактирование" imageMso="EditIcon" />
+
+			  <menuSeparator id="MenuSep5_" />
+
+			  <button id="VstPoleSpisok"
+				  label="Поле со списком" 
+				  screentip="Вставить поле со списком"
+				  supertip="Вставить поле со списком для быстрого выбора вариантов текста"
+				  onAction="ВставкаПолеСписок" imageMso="ComboBox" />
+
+			  <button id="VstPoleFormText"
+				  label="Поле форматированного текста" 
+				  screentip="Вставить поле форматированного текста (Alt+Shift+G)"
+				  supertip="Вставить поле форматированного текста для выделенного фрагмента, чтобы использовать в качестве связи в дальнейшем"		  
+				  onAction="ВставкаПолеФормТекст" imageMso="DatasheetColumnRename" />
+
+			  <button id="PropPole"
+				  label="Свойства поля" 
+				  screentip="Отобразить окно свойств выделенного поля"
+				  supertip="Отобразить окно свойств выделенного поля (список, текст и т.д.)"
+				  onAction="СвойстваПоля" imageMso="PropertiesForm" />
+
+			  <menuSeparator id="MenuSepVstSvaz" />
+
+			  <button id="VstSvaz"
+				  label="Cвязь с текстом" 
+				  screentip="Вставить связь (Alt+L)"
+				  supertip="Вставка связи на текст скопированный в буфер обмена"		  
+				  onAction="ВставитьСвязь" imageMso="SourceControlShareObjects" />
+
+		</menu>
+	</group>
+
+        <group id="Ass_Upd" label="Обновление" imageMso="Refresh" >
+
+	  <button id="ObnPol" size="large" 
+		  label="Обновить поля" 
+		  screentip="Обновить поля в документе (F10)"
+		  supertip="Расширенное обновление полей в документе, с учетом полей в тексте графических объектов"		  
+		  onAction="ОбновитьПоля" imageMso="Refresh" />
+
+	  <button id="ObnForm" size="normal" 
+		  label="Обн. формулы" 
+		  screentip="Обновить формулы в документе (Ctrl+Alt+F10)"
+		  supertip="Обновление всех формул в документе в соответствии с настройками Microsoft Equation"		  
+		  onAction="ОбновитьФормулы" imageMso="TableSharePointListsModifyWorkflow" />
+
+	  <button id="UdalVnSv" size="normal" 
+		  label="Удалить связи" 
+		  screentip="Удалить внешние связи с другими документами"
+		  supertip="Удаление из структуры связей внешних ссылок и оптимизация текстовых объектов (графики, диаграммы и т.д.)"		  
+		  onAction="ОптимизироватьПоля" imageMso="QueryDelete" />
+
+	  <button id="RazorSv" size="normal" 
+		  label="Разорвать связи" 
+		  screentip="Разорвать все связи и преобразовать поля в текст"
+		  supertip="Разрыв связей и преобразование полей в текст. После данного действия нумерация и все остальные поля превращаются в простой текст"		  
+		  onAction="ОтсоединитьПоля" imageMso="TableUnlinkExternalData" />
+
+        </group>
+
+        <group id="Ass_Style" label="Стили" imageMso="FormControlLabel" >
+
+	  <splitButton id="StlText" size="normal">
+
+		<button id="StlTextSet"
+			label="Текст"
+			screentip="Текстовый стиль (Alt+T)"
+			supertip="Применить текстовый стиль к выделенному фрагменту"		  
+			onAction="СтильТекст" imageMso="A" />
+		
+			<menu id="StlTextMenu">
+
+				<button id="StlTextCenter"
+					label="По центру"
+					screentip="Текстовый стиль по центру (Alt+B)"
+					supertip="Применить текстовый стиль по центру к выделенному фрагменту"		  
+					onAction="СтильТекстПоЦентру" imageMso="AlignCenter" />
+
+				<button id="StlTextRazr"
+					label="Р а з р я д к а"
+					screentip="Текстовый стиль с разрядкой (Alt+Shift+R)"
+					supertip="Применить текстовый стиль с разрядкой к выделенному фрагменту"		  
+					onAction="СтильТекстРазрядка" imageMso="AsianLayoutMenu" />
+			</menu>	
+
+	  </splitButton>
+
+	  <button id="StlRisSet"
+		label="Рисунок"
+		screentip="Стиль рисунка (Alt+R)"
+		supertip="Применить стиль рисунка к выделенному фрагменту"		  
+		onAction="СтильРисунок" imageMso="ContentControlPicture" />
+
+	  <splitButton id="StlFormula" size="normal">
+
+		<button id="StlFormulaSet"
+			label="Формула"
+			screentip="Стиль формулы (Alt+F)"
+			supertip="Применить стиль формулы к выделенному фрагменту"		  
+			onAction="СтильФормула" imageMso="AutoSum" />
+		
+			<menu id="StlFormulaMenu">
+
+				<button id="StlFormulaDescr"
+					label="Описание формулы"
+					screentip="Стиль описания формулы (Alt+D)"
+					supertip="Применить стиль описания формулы к выделенному фрагменту"		  
+					onAction="СтильФормулаОписание" imageMso="FormControlLabel" />
+
+			</menu>	
+
+	  </splitButton>
+
+	  <splitButton id="StlHeader" size="normal">
+
+		<button id="StlHeaderSet"
+			label="Заголовок"
+			screentip="Стиль заголовка без нумерации (Alt+Ё)"
+			supertip="Применить стиль заголовка без нумерации к выделенному фрагменту"		  
+			onAction="СтильЗаголовокБезНомера" imageMso="TextReflectionGallery" />
+		
+			<menu id="StlHeaderMenu">
+
+				<button id="StlHeader1"
+					label="Заголовок 1 (раздел)"
+					screentip="Стиль заголовка раздела (Alt+1)"
+					supertip="Применить стиль заголовка раздела к выделенному фрагменту"		  
+					onAction="СтильЗаголовок1" imageMso="_1" />
+
+				<button id="StlHeader2"
+					label="Заголовок 2 (подраздел)"
+					screentip="Стиль заголовка подраздела (Alt+2)"
+					supertip="Применить стиль заголовка подраздела к выделенному фрагменту"		  
+					onAction="СтильЗаголовок2" imageMso="_2" />
+
+				<button id="StlHeader3"
+					label="Заголовок 3 (пункт)"
+					screentip="Стиль заголовка пункта (Alt+3)"
+					supertip="Применить стиль заголовка пункта к выделенному фрагменту"		  
+					onAction="СтильЗаголовок3" imageMso="_3" />
+			</menu>	
+
+	  </splitButton>
+
+	  <button id="StlNumProstSet"
+		label="Перечисление"
+		screentip="Стиль перечисления (Ctrl+Ё)"
+		supertip="Применить стиль простого перечисления (маркер тире) к выделенному фрагменту"		  
+		onAction="СтильПростоеПеречисление" imageMso="ControlSpecialEffectChiseled" />
+
+
+	  <splitButton id="StlNum" size="normal">
+
+		<button id="StlNumSet"
+			label="Нумерация"
+			screentip="Стиль нумерации (Ctrl+Shift+Ё)"
+			supertip="Применить стиль нумерации к выделенному фрагменту"		  
+			onAction="СтильСложноеПеречисление" imageMso="FormControlEditBox" />
+		
+			<menu id="StlNumMenu">
+
+				<button id="StlNumPlus"
+					label="Повысить уровень ..."
+					screentip="Повысить уровень нумерации"
+					supertip="Повысить уровень нумерации выделенного фрагмента"		  
+					onAction="ПовыситьУровеньНумерации" imageMso="OutlinePromote" />
+
+				<button id="StlNumMinus"
+					label="Понизить уровень ..."
+					screentip="Понизить уровень нумерации"
+					supertip="Понизить уровень нумерации выделенного фрагмента"		  
+					onAction="ПонизитьУровеньНумерации" imageMso="OutlineGroup" />
+
+			</menu>	
+
+	  </splitButton>
+
+        </group>
+
+        <group id="Ass_Numb" label="Нумерация" imageMso="TripaneViewMode" >
+
+	  <button id="VstAvtoSs" size="large" 
+		  label="Авто ссылка" 
+		  screentip="Вставка автоматической ссылки (Alt+Q)"
+		  supertip="Вставка автоматической ссылки на следующий за курсором объект (рисунок, таблица и т.д.). Тип объекта определяется в соответствии с содержанием 5 символов текста до курсора (рис, табл и т.д.)"
+		  onAction="ВставитьАвтоСсылку" imageMso="FileLinksToFiles" />
+
+	  <buttonGroup id="Ass_Numb_Ss" >
+
+		  <button id="VstSs"
+			  label="Вставка" 
+			  screentip="Вставка ссылки на определенный тип нумерации (Alt+Shift+Q)"
+			  supertip="Вставить ссылку на номер объекта в документе (таблица, рисунок, формула и т.д.)"
+			  onAction="ВставитьСвязьНаАвтоНум" imageMso="ReplaceWithAutoText" />
+
+		  <button id="IsprSs"
+			  label="Исправить" 
+			  screentip="Исправление не работающих ссылок на нумерацию"
+			  supertip="Использовать в случае появления ошибки после обновления ссылки"
+			  onAction="ИсправитьСвязи" imageMso="AutoLinkingStop" />
+
+	  </buttonGroup>
+
+	  <button id="ParamNum" size="normal" 
+		  label="Параметры нумерации" 
+		  screentip="Открыть параметры нумерации"
+		  supertip="Изменение параметров нумерации (простая, сложная) и шаблона вставки номеров"
+		  onAction="ПараметрыНумерации" imageMso="ListSetNumberingValue" />
+
+	        <buttonGroup id="VstN" >
+	  	
+		<button id="VstNris"
+			screentip="Вставка номера рисунка (Ctrl+1)"
+		  	supertip="Вставка следующего номера рисунка в текущую позицию курсора"		  
+		  	onAction="Нум_рис" imageMso="PictureInsertFromFilePowerPoint" />
+
+		<button id="VstTab"
+		  	screentip="Вставка номера таблицы (Ctrl+2)"
+		  	supertip="Вставка следующего номера таблицы в текущую позицию курсора"		  
+		  	onAction="Нум_табл" imageMso="TableInsert" />
+
+		<button id="VstForm"
+		  	screentip="Вставка номера формулы (Ctrl+3)"
+		  	supertip="Вставка следующего номера формулы в текущую позицию курсора"		  
+		  	onAction="Нум_форм" imageMso="EquationEdit" />
+
+		<button id="VstLit"
+		  	screentip="Вставка номера литературы (Ctrl+4)"
+		  	supertip="Вставка следующего номера литературы в текущую позицию курсора"		  
+		  	onAction="Нум_лит" imageMso="CustomBibliographyGallery" />
+
+		<button id="VstPril"
+		  	screentip="Вставка номера приложения (Ctrl+5)"
+		  	supertip="Вставка следующего номера приложения (в цифровом формате) в текущую позицию курсора"		  
+		  	onAction="Нум_прил" imageMso="CustomGallery1" />
+
+		<button id="VstPunkt"
+		  	screentip="Вставка номера пункта (Ctrl+6)"
+		  	supertip="Вставка следующего номера пункта (в цифровом формате) в текущую позицию курсора"		  
+		  	onAction="Нум_пункта" imageMso="WordCountList" />
+
+		<button id="UtilsInsertPageN"
+			screentip="Вставить номер страницы"
+			supertip="Вставка номера страницы в нижний колонтитул активного листа"		  
+			onAction="ВставитьНумерациюСтраниц" imageMso="FormattingUnique" />
+
+        	</buttonGroup>
+
+        </group>
+
+        <group id="Mast_Shab" label="Мастер шаблонов" imageMso="CreateReportFromWizard" >
+
+	  <button id="OpenSpisok" size="large" 
+		  label="Открыть список" 
+		  screentip="Открыть список для выбора данных (Alt+S)"
+		  supertip="Открыть список из базы данных (нескольких баз) для выбора загружаемых данных"
+		  onAction="ПерейтиКзаписи_" imageMso="AccessTableContacts" />
+
+	  <button id="Params" size="normal" 
+		  label="Параметры" 
+		  screentip="Открыть установки параметров (настроек) мастера шаблонов"
+		  supertip="Открыть установки параметров (настроек) мастера шаблонов"
+		  onAction="Настройки_" imageMso="DefinePrintStyles" />
+
+	        <buttonGroup id="MastShabGroup1" >
+
+		<button id="Zapusk"
+			label="Запуск" 
+			screentip="Запуск генерации документа или потока документов (Alt+Shift+S)"
+			supertip="Запуск генерации документа или потока документов"
+			onAction="Запуск_" imageMso="AnimationPreview" />
+
+		<button id="MshOtkrPapku"
+			screentip="Открыть папку с результатами"
+			supertip="Открыть папку с результатами"
+			onAction="ОткрытьПутьСохранения" imageMso="FileOpen" />
+
+	  	<button id="OpenReserve" 
+	  	  	screentip="Открыть резерв документа"
+	  	  	supertip="Открыть резерв документа"
+	  	  	onAction="ОткрытьРезервДокумента" imageMso="BibliographyAddNewSource" />
+
+        	</buttonGroup>
+
+	        <buttonGroup id="MastShabGroup2" >
+	  	
+		<button id="MShLeft"
+			screentip="Вернуться к предыдущему элементу"
+		  	supertip="Вернуться к предыдущему элементу"
+		  	onAction="ЗапускНазад_" imageMso="OutlinePromote" />
+
+		<button id="MShRight"
+			screentip="Перейти к следующему элементу"
+		  	supertip="Перейти к следующему элементу"		  
+		  	onAction="ЗапускВперед_" imageMso="OutlineDemote" />
+
+		<button id="MshRedPol"
+			label="Редактор"
+		  	screentip="Редактор полей"
+		  	supertip="Редактор полей"
+		  	onAction="ОткрытьРедакторПолей_" imageMso="BlogPublishDraft" />
+
+        	</buttonGroup>
+
+        </group>
+
+
+        <group id="Ass_Serv" label="Сервис" imageMso="GroupTools">
+
+	  <button id="Opt" size="large" 
+		  label="Настройки программы" 
+		  screentip="Настройки программы"
+		  supertip="Окно настроек программы (параметры вставки, обновления и т.д.)"		  
+		  onAction="ОткрытьОпции" imageMso="GroupTools" />
+
+          <buttonGroup id="IntScan" >
+
+	  <button id="Integr" 
+		  label="Интегр." 
+		  screentip="Интеграция Ассистента"
+		  supertip="Интеграция Ассистента в текущий документ"		  
+		  onAction="ОткрытьФормуИнтеграции" imageMso="ImportTextFile" />
+
+	  <button id="UtilsIsertFromScaner" 
+		  label="Сканер"
+		  screentip="Вставка избражения со сканера"
+		  supertip="Вставить изображение со сканера в текущий документ"		  
+		  onAction="InsertFromScanner" imageMso="ImagerScan" />
+	  
+	  </buttonGroup>
+
+          <buttonGroup id="VstZat" >
+
+	  <button id="VstKomm" 
+		  label="Коммент" 
+		  screentip="Вставить комментарий (Alt+Z)"
+		  supertip="Вставка комментария для выделенного текста"		  
+		  onAction="ДобКомм" imageMso="ReviewNewComment" />
+
+	  <button id="ZatPol"
+		  label="Поля" 
+		  screentip="Отобразить или скрыть затенение полей"
+		  supertip="Данная опция используется для удобства работы с полями мастера шаблонов, последовательной нумерации, ссылок и т.д."		  
+		  onAction="ЗатенениеПолей" imageMso="FieldShading" />
+
+
+	  </buttonGroup>
+
+	        <menu id="Utils" label="Дополнительно">
+
+		        <menu id="UtilsTabl" label="Таблицы">
+
+				<button id="UtilsTablPovtNum"
+					label="Повторить нумерацию столбцов"
+					screentip="Повторить нумерацию столбцов таблицы (Alt+N)"
+					supertip="Повторить нумерацию столбцов таблицы на следующих страницах, используется для многостраничных таблиц"		  
+					onAction="ПовторНумЗаголовкаТабл" />
+
+			        <menuSeparator id="MenuSep4" />
+
+				<button id="UtilsTablDobProd"
+					label="Добавить заголовок продолжения"
+					screentip="Добавить заголовок продолжения таблицы"
+					supertip="Добавление заголовка продолжения таблицы на текущей странице, используется для многостраничных таблиц"		  
+					onAction="ДобПродолжТабл" />
+
+				<button id="UtilsTablDobOkon"
+					label="Добавить заголовок окончания"
+					screentip="Добавить заголовок окончания таблицы"
+					supertip="Добавление заголовка окончания таблицы на текущей странице, используется для многостраничных таблиц"		  
+					onAction="ДобОкончТабл" />
+
+			        <menuSeparator id="MenuSep5" />
+
+				<button id="UtilsTablPeremesh"
+					label="Перемешивание строк таблицы"
+					screentip="Перемешивание строк таблицы"
+					supertip="Случайное перемешивание строк таблицы (например, для генерации заданий по вариантам)"		  
+					onAction="СлучРаспрСтрокТаблицы" />
+
+
+			</menu>
+
+		        <menu id="UtilsOgl" label="Оглавление">
+
+				<button id="UtilsOglVst"
+					label="Вставить/обновить оглавление"
+					screentip="Вставить/обновить оглавление (Alt+O)"
+					supertip="Вставка нового или полное обновление существующего оглавления"		  
+					onAction="Оглавление" />
+
+				<button id="UtilsOglObnStr"
+					label="Обновить страницы оглавления"
+					screentip="Обновить страницы оглавления"
+					supertip="Обновить только страницы оглавления (без обновления структуры)"		  
+					onAction="ОбновитьНомераСтраницОглавления" />
+
+			</menu>
+
+		        <menu id="UtilsLit" label="Список литературы">
+
+				<button id="UtilsLitSortAbc"
+					label="Сортировать список литературы по алфавиту"
+					screentip="Сортировать список литературы по алфавиту"
+					supertip="Сортировка списка литературы в алфавитном порядке и автоматическое исправление ссылок"
+					onAction="СортировкаЛитературыАлфавит" />
+
+				<button id="UtilsLitSortUpom"
+					label="Сортировать список литературы по порядку упоминания в тексте"
+					screentip="Сортировать список литературы по порядку упоминания в тексте"
+					supertip="Сортировка списка литературы в порядке упоминания в тексте и автоматическое исправление ссылок"		  
+					onAction="СортировкаЛитературыУпоминание" />
+
+			</menu>
+
+		        <menu id="UtilsTest" label="Работа с системами дист. обучения">
+
+				<button id="UtilsTestGIFT"
+					label="Создать тест из документа (выделенного фрагмента) в формате GIFT"
+					screentip="Тест создается для импорта в системы дистанционного обучения, например Moodle"
+					supertip="Тест создается в формате GIFT или GIFT with medias format в зависимости от наличия медиа-объектов в документе (выделенном фрагменте)"
+					onAction="СоздатьТестGIFT" imageMso="DataValidation" />
+
+				<button id="UtilsTestIspring"
+					label="Создать тест из документа (выделенного фрагмента) в формате Ispring"
+					screentip="Тест создается для импорта в Ispring Suite"
+					supertip="Тест создается в формате Ispring (Excel) с учетом наличия медиа-объектов в документе (выделенном фрагменте)"
+					onAction="СоздатьТестIspring" imageMso="DataValidation" />
+
+		        	<menuSeparator id="ExportFormats" />
+
+				<button id="UtilsTestGIFT_import"
+					label="Импортировать тест в формате GIFT в текущий документ"
+					screentip="Тест импортируется из формата систем дистанционного обучения, например Moodle"
+					supertip="Тест импортируется в простом текстовой формате GIFT (расширение txt) или GIFT with medias format (расширение zip)"
+					onAction="ИмпортТестGIFT" imageMso="ImportTextFile" />
+
+
+				<button id="UtilsTestIspring_import"
+					label="Импортировать тест в формате Ispring в текущий документ"
+					screentip="Тест импортируется из формата Ispring"
+					supertip="Тест импортируется из формата Ispring (Excel) с учетом наличия медиа-объектов"
+					onAction="ИмпортТестIspring" imageMso="ImportTextFile" />
+
+		        	<menuSeparator id="ImportFormats" />
+
+				<button id="UtilsConvTest"
+					label="Конвертировать активную таблицу с тестом (где курсор) в формат для экспорта в GIFT или Ispring"
+					screentip="Все объекты вложенные в ячейки таблицы преобразовываются автоматически"
+					supertip="Образец оформления данной таблицы см. в данном разделе меню в файле примера теста"
+					onAction="КонвТаблТест" imageMso="BlogPublishDraft" />
+
+				<button id="UtilsTestPrimer"
+					label="Открыть пример оформления теста"
+					screentip="Образец теста с основными возможностями программы"
+					supertip="В тесте указаны примеры основных видов вопросов, которые можно экспортировать в формат GIFT"
+					onAction="ПримерТестGIFT" imageMso="FileSaveAsWordDocx" />
+
+		        	<menuSeparator id="MenuSep11" />
+
+				<button id="UtilsMoodleText"
+					label="Создать главу электронной книги Moodle из документа (выделенного фрагмента)"
+					screentip="Глава создается для последующего импорта в Moodle"
+					supertip="При импорте в систему Moodle необходимо выбрать пункт - Импорт глав - Каждый HTML-файл представляет собой одну главу"
+					onAction="ЭкспортГлаваMoodle" imageMso="SetLanguage" />
+
+			</menu>
+
+		        <menuSeparator id="MenuSep1" />
+
+			<button id="UtilsRedForm"
+				label="Редактор формул"
+				screentip="Вставить формулу (Alt+E)"
+				supertip="Вставка формулы Microsoft Equation"		  
+				onAction="ВставитьФормулу" imageMso="FunctionWizard" />
+
+			<button id="UtilsPropis"
+				label="Число в текст"
+				screentip="Число в текст (Alt+G)"
+				supertip="Преобразовать число в текст"		  
+				onAction="ПреобрВыделЧислоВтекст" imageMso="MagicEightBall" />
+
+			<button id="UtilsCalc"
+				label="Вычислить выделение"
+				screentip="Вычислить выделенное арифметическое выражение (Alt+Shift+E)"
+				supertip="Вычислить выделенное арифметическое выражение в формате поля данных"		  
+				onAction="ВычислитьВыделение" imageMso="Calculator" />
+
+		        <menuSeparator id="MenuSep2" />
+
+			<button id="UtilsColorText"
+				label="Выделить текст"
+				screentip="Выделить текст (Alt+X)"
+				supertip="Переключатель выделения текста с черного на красный цвет и обратно"		  
+				onAction="ВыдТекст" imageMso="AppointmentColor1" />
+
+			<button id="UtilsColorBack"
+				label="Выделить фон"
+				screentip="Выделить фон (Alt+V)"
+				supertip="Переключатель выделения фона с белого на желтый цвет и обратно"		  
+				onAction="ВыдФон" imageMso="AppointmentColor10" />
+
+			<button id="UtilsStrikeText"
+				label="Зачеркнуть"
+				screentip="Зачеркнуть текст (Alt+C)"
+				supertip="Переключатель зачеркивания текста"		  
+				onAction="ЗачеркнТекст" imageMso="Strikethrough" />
+
+	  		<button id="VstData"
+		  		label="Текущая дата" 
+		  		screentip="Вставить текущую дату (Ctrl+Shift+D)"
+		  		supertip="Вставка текущей даты в формате дд.мм.гггг"		  
+		  		onAction="ВстДату" imageMso="SlideShowRehearseTimings" />
+
+		        <menuSeparator id="MenuSep3" />
+
+
+			<button id="UtilsPrint"
+				label="Печать брошюр"
+				screentip="Печать брошюр (Alt+Shift+P)"
+				supertip="Распечатать текущий документ в виде брошюры за 2 прогона (на любом принтере)"		  
+				onAction="ПечатьБрошюр" imageMso="AddressBook" />
+
+			<button id="ExportPDF"
+				label="Экспорт в PDF"
+				screentip="Экспортировать текущий/выбранные документы в PDF (Ctrl+Shift+E)"
+				supertip="Экспорт производится в ту же папку, где сохранен исходный файл"		  
+				onAction="ЭкспортPDF" imageMso="Export" />
+
+		</menu>
+        </group>                          
+
+
+
+    </tab>
+
+</tabs>
+</ribbon>
+
+</customUI>
