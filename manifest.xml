@@ -1553,9 +1553,9 @@
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
         <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/commands.html"/> 
 
-        <bt:Url id="ProfilesControl.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
-        <bt:Url id="NewProfile.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
-        <bt:Url id="SaveProfile.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="ProfilesControl.Url" DefaultValue="https://localhost:3000/profilesControl.html"/>
+        <bt:Url id="NewProfile.Url" DefaultValue="https://localhost:3000/newProfile.html"/>
+        <bt:Url id="SaveProfile.Url" DefaultValue="https://localhost:3000/saveProfile.html"/>
 
         <bt:Url id="VstavkaBezFormata.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
         <bt:Url id="VstShab.Url" DefaultValue="https://localhost:3000/taskpane.html"/>

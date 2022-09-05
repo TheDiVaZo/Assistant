@@ -26,7 +26,7 @@ let htmlPlugins = [
   }),
 ];
 
-let modules = ["aboutProg"];
+let modules = ["aboutProg", "newProfile", "saveProfile", "profilesControl"];
 
 modules.forEach((str) => {
   entry[str] = "./src/taskpane/" + str + ".ts";
